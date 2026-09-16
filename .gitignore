@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node / frontend
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Large / regenerable data artifacts (rerun scripts/ to reproduce)
+data/raw/*.pdf
+data/synthetic/*.parquet
+data/raw/osm_facilities.json
+
+# ML model artifacts (rerun ml/train_all.py to reproduce)
+ml/models/*.pkl
+ml/models/*.joblib
+
+# Env / secrets
+.env
+*.db
+*.sqlite3
