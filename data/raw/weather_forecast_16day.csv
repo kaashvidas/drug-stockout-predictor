@@ -1,0 +1,97 @@
+district,state,date,temp_max_c,temp_min_c,precip_mm,rain_mm
+Sarguja,Chhattisgarh,2026-09-17,29.9,22.5,3.3,1.7
+Sarguja,Chhattisgarh,2026-09-18,28.9,22.0,3.0,0.9
+Sarguja,Chhattisgarh,2026-09-19,29.5,22.7,17.3,5.7
+Sarguja,Chhattisgarh,2026-09-20,29.7,21.7,2.4,1.2
+Sarguja,Chhattisgarh,2026-09-21,29.3,21.8,4.8,1.2
+Sarguja,Chhattisgarh,2026-09-22,29.1,22.5,5.1,2.1
+Sarguja,Chhattisgarh,2026-09-23,29.7,22.0,18.6,3.6
+Sarguja,Chhattisgarh,2026-09-24,30.4,21.5,10.8,7.2
+Sarguja,Chhattisgarh,2026-09-25,27.9,22.4,14.4,4.8
+Sarguja,Chhattisgarh,2026-09-26,24.9,22.3,42.0,11.4
+Sarguja,Chhattisgarh,2026-09-27,25.6,22.7,10.8,7.8
+Sarguja,Chhattisgarh,2026-09-28,28.2,21.1,1.2,0.0
+Sarguja,Chhattisgarh,2026-09-29,29.6,19.1,0.0,0.0
+Sarguja,Chhattisgarh,2026-09-30,29.4,20.0,0.0,0.0
+Sarguja,Chhattisgarh,2026-10-01,29.3,20.4,0.0,0.0
+Sarguja,Chhattisgarh,2026-10-02,,,,
+Ernakulam,Kerala,2026-09-17,30.2,24.2,12.4,5.8
+Ernakulam,Kerala,2026-09-18,30.5,24.0,6.1,2.9
+Ernakulam,Kerala,2026-09-19,29.9,24.5,9.9,4.4
+Ernakulam,Kerala,2026-09-20,28.8,24.4,6.1,2.8
+Ernakulam,Kerala,2026-09-21,30.4,23.6,7.8,3.0
+Ernakulam,Kerala,2026-09-22,29.5,24.2,11.7,4.5
+Ernakulam,Kerala,2026-09-23,30.3,23.6,2.4,1.8
+Ernakulam,Kerala,2026-09-24,30.5,24.1,1.8,0.6
+Ernakulam,Kerala,2026-09-25,30.6,23.3,1.2,0.0
+Ernakulam,Kerala,2026-09-26,28.4,23.6,7.8,4.8
+Ernakulam,Kerala,2026-09-27,27.5,23.1,24.6,7.2
+Ernakulam,Kerala,2026-09-28,30.3,23.3,3.6,1.8
+Ernakulam,Kerala,2026-09-29,30.2,23.2,0.6,0.0
+Ernakulam,Kerala,2026-09-30,30.5,23.6,2.4,0.6
+Ernakulam,Kerala,2026-10-01,30.9,23.6,0.6,0.0
+Ernakulam,Kerala,2026-10-02,,,,
+Nagpur,Maharashtra,2026-09-17,32.2,24.7,1.1,0.7
+Nagpur,Maharashtra,2026-09-18,31.6,24.7,2.5,1.3
+Nagpur,Maharashtra,2026-09-19,31.4,24.2,1.3,0.7
+Nagpur,Maharashtra,2026-09-20,30.6,24.3,4.8,1.9
+Nagpur,Maharashtra,2026-09-21,31.1,24.0,4.5,1.8
+Nagpur,Maharashtra,2026-09-22,31.9,24.3,3.0,1.8
+Nagpur,Maharashtra,2026-09-23,29.4,23.7,5.4,1.8
+Nagpur,Maharashtra,2026-09-24,30.6,23.8,10.2,3.6
+Nagpur,Maharashtra,2026-09-25,30.5,23.8,10.8,0.6
+Nagpur,Maharashtra,2026-09-26,29.3,24.1,3.6,1.8
+Nagpur,Maharashtra,2026-09-27,30.9,23.6,0.0,0.0
+Nagpur,Maharashtra,2026-09-28,28.6,24.2,0.0,0.0
+Nagpur,Maharashtra,2026-09-29,30.2,23.1,0.0,0.0
+Nagpur,Maharashtra,2026-09-30,30.7,21.6,0.0,0.0
+Nagpur,Maharashtra,2026-10-01,31.4,21.9,0.0,0.0
+Nagpur,Maharashtra,2026-10-02,,,,
+Jaipur,Rajasthan,2026-09-17,33.8,24.4,16.2,3.9
+Jaipur,Rajasthan,2026-09-18,30.7,23.1,0.5,0.4
+Jaipur,Rajasthan,2026-09-19,32.0,23.6,2.2,0.8
+Jaipur,Rajasthan,2026-09-20,31.7,22.6,0.0,0.0
+Jaipur,Rajasthan,2026-09-21,32.8,23.8,0.0,0.0
+Jaipur,Rajasthan,2026-09-22,33.9,24.2,0.0,0.0
+Jaipur,Rajasthan,2026-09-23,34.4,23.1,0.0,0.0
+Jaipur,Rajasthan,2026-09-24,35.1,23.8,0.0,0.0
+Jaipur,Rajasthan,2026-09-25,33.9,23.8,0.0,0.0
+Jaipur,Rajasthan,2026-09-26,34.6,23.5,0.0,0.0
+Jaipur,Rajasthan,2026-09-27,35.5,25.1,0.0,0.0
+Jaipur,Rajasthan,2026-09-28,33.7,24.6,0.0,0.0
+Jaipur,Rajasthan,2026-09-29,28.3,22.9,2.4,1.8
+Jaipur,Rajasthan,2026-09-30,29.5,23.0,1.2,1.2
+Jaipur,Rajasthan,2026-10-01,34.2,21.5,0.45,0.45
+Jaipur,Rajasthan,2026-10-02,,,,
+Tiruvallur,Tamil Nadu,2026-09-17,36.1,25.6,0.6,0.4
+Tiruvallur,Tamil Nadu,2026-09-18,33.9,25.3,16.9,3.3
+Tiruvallur,Tamil Nadu,2026-09-19,33.6,25.2,16.7,3.3
+Tiruvallur,Tamil Nadu,2026-09-20,31.8,24.1,16.5,4.5
+Tiruvallur,Tamil Nadu,2026-09-21,31.8,24.2,10.5,2.1
+Tiruvallur,Tamil Nadu,2026-09-22,33.4,24.1,5.4,2.1
+Tiruvallur,Tamil Nadu,2026-09-23,31.5,24.6,12.0,5.4
+Tiruvallur,Tamil Nadu,2026-09-24,29.7,25.3,5.4,3.6
+Tiruvallur,Tamil Nadu,2026-09-25,31.5,25.2,11.4,6.6
+Tiruvallur,Tamil Nadu,2026-09-26,32.0,25.7,12.6,3.0
+Tiruvallur,Tamil Nadu,2026-09-27,32.2,24.9,0.0,0.0
+Tiruvallur,Tamil Nadu,2026-09-28,32.9,25.0,0.0,0.0
+Tiruvallur,Tamil Nadu,2026-09-29,31.8,24.7,1.8,1.2
+Tiruvallur,Tamil Nadu,2026-09-30,31.0,24.3,9.0,4.8
+Tiruvallur,Tamil Nadu,2026-10-01,31.2,23.8,1.2,0.45
+Tiruvallur,Tamil Nadu,2026-10-02,,,,
+Pilibhit,Uttar Pradesh,2026-09-17,30.1,24.9,3.1,1.4
+Pilibhit,Uttar Pradesh,2026-09-18,30.6,24.8,1.2,0.7
+Pilibhit,Uttar Pradesh,2026-09-19,31.7,23.9,0.2,0.2
+Pilibhit,Uttar Pradesh,2026-09-20,30.9,24.3,0.0,0.0
+Pilibhit,Uttar Pradesh,2026-09-21,31.9,24.3,0.0,0.0
+Pilibhit,Uttar Pradesh,2026-09-22,31.9,23.7,0.0,0.0
+Pilibhit,Uttar Pradesh,2026-09-23,31.5,23.1,0.0,0.0
+Pilibhit,Uttar Pradesh,2026-09-24,31.7,23.4,0.6,0.6
+Pilibhit,Uttar Pradesh,2026-09-25,31.1,24.1,0.6,0.6
+Pilibhit,Uttar Pradesh,2026-09-26,30.8,22.9,0.0,0.0
+Pilibhit,Uttar Pradesh,2026-09-27,25.7,23.2,42.6,19.2
+Pilibhit,Uttar Pradesh,2026-09-28,24.9,22.4,105.6,56.4
+Pilibhit,Uttar Pradesh,2026-09-29,26.9,22.6,12.6,7.8
+Pilibhit,Uttar Pradesh,2026-09-30,29.5,22.2,0.0,0.0
+Pilibhit,Uttar Pradesh,2026-10-01,28.6,21.6,0.0,0.0
+Pilibhit,Uttar Pradesh,2026-10-02,,,,

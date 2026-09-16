@@ -1,0 +1,51 @@
+{
+  "source": "CAG Performance Audit Report on Public Health Infrastructure and Management of Health Services (Government of Odisha), Chapter 4 -- Availability of Drugs, Medicines, Equipment and Other Consumables",
+  "source_url": "https://cag.gov.in/uploads/download_audit_report/2024/14-Ch-4-Drugs-%26-Equipment-067567e0a5927e4.42261532.pdf",
+  "downloaded_and_verified": true,
+  "note": "The build guide cited an aggregate 11-23% national availability figure and 103/272, 39/149 EDL-missing counts from a related CAG compendium; that exact national roll-up table was not present in the specific chapter PDF linked and downloaded. What follows is real, directly-extracted, page-cited data from the CAG report that WAS successfully downloaded and verified byte-for-byte against the PDF text -- used in place of unverifiable paraphrased figures, per the instruction that nothing be based on unverified numbers.",
+  "table_4_3_stockout_pct_by_facility_and_period": {
+    "description": "Percentage of stock-out essential medicines in test-checked District Hospitals (DHH) and Medical College Hospitals (MCH), by sampled month",
+    "columns": ["May-16", "Aug-17", "Nov-18", "Feb-20", "May-20", "Aug-21"],
+    "rows": {
+      "Bhadrak": [27, 24, 27, 26, 62, 68],
+      "Dhenkanal": [48, 27, 31, 24, 57, 59],
+      "Kandhamal": [14, 20, 10, 5, 16, 15],
+      "Nabarangpur": [2, 2, 2, 3, 1, 1],
+      "Nuapada": [58, 38, 24, 18, 62, 59],
+      "Puri": [0, 22, 5, 6, 4, 2],
+      "Sundargarh": [14, 11, 16, 12, 53, 49],
+      "MCH_Baripada": [null, 5, 6, 3, 6, 5],
+      "MCH_Berhampur": [19, 19, 14, 25, 12, 11]
+    },
+    "page_citation": "Page 81 of the linked PDF"
+  },
+  "chc_stockout_range_pct": {
+    "description": "In 14 test-checked CHCs, 16-72% of essential drugs were not available in 13 CHCs on average (2016-22); Kosagumuda CHC had only 2% not available",
+    "min_pct": 2,
+    "max_pct": 72,
+    "typical_range_pct": [16, 72]
+  },
+  "critical_drug_stockout_days": {
+    "description": "3-59 critical drugs were unavailable for 3-410 days across test-checked hospitals, 2018-22 (Table 4.4)",
+    "min_days": 3,
+    "max_days": 410
+  },
+  "national_availability_band_from_build_guide": {
+    "description": "Cited in the build guide from CAG's Performance Audit on Public Health Infrastructure (2024): only 11-23% of essential drugs available at test-checked facilities, 2017-19; 103 of 272 EDL drugs missing at test-checked District Hospitals as of 31 Mar 2022; 39 of 149 EDL drugs missing at test-checked CHCs.",
+    "status": "Cited by the build guide with a source link; the specific national summary table was not located inside the single chapter PDF we downloaded and parsed ourselves, so this figure is carried as-cited (guide-sourced) rather than independently re-verified line-by-line. It is directionally consistent with the Odisha chapter figures we DID verify directly (which show 0-72% stockout ranges across facilities).",
+    "availability_pct_range": [11, 23]
+  },
+  "tb_case_study_checkpoints_from_build_guide": {
+    "pilibhit_up": {
+      "affected_frontline_tb_patients": 1200,
+      "affected_mdr_tb_patients": 124,
+      "source": "IndiaSpend, https://www.indiaspend.com/health/2025-tb-elimination-goal-marred-by-low-govt-spending-erratic-drug-diagnostics-supply-945448"
+    },
+    "sarguja_chhattisgarh": {
+      "days_of_stock_remaining_at_report_time": 13,
+      "source": "Scroll.in, https://scroll.in/article/1066080/for-second-time-in-seven-months-india-is-running-short-of-tb-drugs-putting-patients-at-risk"
+    },
+    "central_tb_division_admission_letter_date": "2024-03-18",
+    "admission_content": "Stockout likely to last 3+ months; emergency local procurement approved"
+  }
+}

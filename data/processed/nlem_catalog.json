@@ -1,0 +1,3173 @@
+[
+  {
+    "code": "1.1.1",
+    "name": "Halothane",
+    "level_of_healthcare": "S,T",
+    "section": "1",
+    "section_title": "Medicines used in Anaesthesia"
+  },
+  {
+    "code": "1.1.2",
+    "name": "Isoflurane",
+    "level_of_healthcare": "S,T",
+    "section": "1",
+    "section_title": "Medicines used in Anaesthesia"
+  },
+  {
+    "code": "1.1.3",
+    "name": "Ketamine",
+    "level_of_healthcare": "P,S,T",
+    "section": "1",
+    "section_title": "Medicines used in Anaesthesia"
+  },
+  {
+    "code": "1.1.4",
+    "name": "Nitrous oxide",
+    "level_of_healthcare": "P,S,T",
+    "section": "1",
+    "section_title": "Medicines used in Anaesthesia"
+  },
+  {
+    "code": "1.1.5",
+    "name": "Oxygen",
+    "level_of_healthcare": "P,S,T",
+    "section": "1",
+    "section_title": "Medicines used in Anaesthesia"
+  },
+  {
+    "code": "1.1.6",
+    "name": "Propofol",
+    "level_of_healthcare": "P,S,T",
+    "section": "1",
+    "section_title": "Medicines used in Anaesthesia"
+  },
+  {
+    "code": "1.1.7",
+    "name": "Sevoflurane",
+    "level_of_healthcare": "S,T",
+    "section": "1",
+    "section_title": "Medicines used in Anaesthesia"
+  },
+  {
+    "code": "1.1.8",
+    "name": "Thiopentone",
+    "level_of_healthcare": "P,S,T",
+    "section": "1",
+    "section_title": "Medicines used in Anaesthesia"
+  },
+  {
+    "code": "1.2.1",
+    "name": "Bupivacaine",
+    "level_of_healthcare": "S,T",
+    "section": "1",
+    "section_title": "Medicines used in Anaesthesia"
+  },
+  {
+    "code": "1.2.2",
+    "name": "Lignocaine",
+    "level_of_healthcare": "P,S,T",
+    "section": "1",
+    "section_title": "Medicines used in Anaesthesia"
+  },
+  {
+    "code": "1.2.3",
+    "name": "Lignocaine (A) + Adrenaline (B)",
+    "level_of_healthcare": "P,S,T",
+    "section": "1",
+    "section_title": "Medicines used in Anaesthesia"
+  },
+  {
+    "code": "1.3.1",
+    "name": "Atropine",
+    "level_of_healthcare": "P,S,T",
+    "section": "1",
+    "section_title": "Medicines used in Anaesthesia"
+  },
+  {
+    "code": "1.3.2",
+    "name": "Glycopyrrolate",
+    "level_of_healthcare": "S,T",
+    "section": "1",
+    "section_title": "Medicines used in Anaesthesia"
+  },
+  {
+    "code": "1.3.3",
+    "name": "Midazolam",
+    "level_of_healthcare": "P,S,T",
+    "section": "1",
+    "section_title": "Medicines used in Anaesthesia"
+  },
+  {
+    "code": "1.3.4",
+    "name": "Morphine",
+    "level_of_healthcare": "P,S,T",
+    "section": "1",
+    "section_title": "Medicines used in Anaesthesia"
+  },
+  {
+    "code": "1.4.1",
+    "name": "Atracurium",
+    "level_of_healthcare": "S,T",
+    "section": "1",
+    "section_title": "Medicines used in Anaesthesia"
+  },
+  {
+    "code": "1.4.2",
+    "name": "Baclofen",
+    "level_of_healthcare": "S,T",
+    "section": "1",
+    "section_title": "Medicines used in Anaesthesia"
+  },
+  {
+    "code": "1.4.3",
+    "name": "Neostigmine",
+    "level_of_healthcare": "S,T",
+    "section": "2",
+    "section_title": "Analgesics, Antipyretics, Non-steroidal Anti-inflammatory"
+  },
+  {
+    "code": "1.4.4",
+    "name": "Succinylcholine",
+    "level_of_healthcare": "S,T",
+    "section": "2",
+    "section_title": "Analgesics, Antipyretics, Non-steroidal Anti-inflammatory"
+  },
+  {
+    "code": "1.4.5",
+    "name": "Vecuronium",
+    "level_of_healthcare": "S,T",
+    "section": "2",
+    "section_title": "Analgesics, Antipyretics, Non-steroidal Anti-inflammatory"
+  },
+  {
+    "code": "2.1.1",
+    "name": "Acetylsalicylic acid",
+    "level_of_healthcare": "P,S,T",
+    "section": "2",
+    "section_title": "Analgesics, Antipyretics, Non-steroidal Anti-inflammatory"
+  },
+  {
+    "code": "2.1.2",
+    "name": "Diclofenac",
+    "level_of_healthcare": "P,S,T",
+    "section": "2",
+    "section_title": "Analgesics, Antipyretics, Non-steroidal Anti-inflammatory"
+  },
+  {
+    "code": "2.1.3",
+    "name": "Ibuprofen",
+    "level_of_healthcare": "P,S,T",
+    "section": "2",
+    "section_title": "Analgesics, Antipyretics, Non-steroidal Anti-inflammatory"
+  },
+  {
+    "code": "2.1.4",
+    "name": "Mefenamic acid",
+    "level_of_healthcare": "P,S,T",
+    "section": "2",
+    "section_title": "Analgesics, Antipyretics, Non-steroidal Anti-inflammatory"
+  },
+  {
+    "code": "2.1.5",
+    "name": "Paracetamol",
+    "level_of_healthcare": "P,S,T",
+    "section": "2",
+    "section_title": "Analgesics, Antipyretics, Non-steroidal Anti-inflammatory"
+  },
+  {
+    "code": "2.2.1",
+    "name": "Fentanyl",
+    "level_of_healthcare": "S,T",
+    "section": "2",
+    "section_title": "Analgesics, Antipyretics, Non-steroidal Anti-inflammatory"
+  },
+  {
+    "code": "2.2.2",
+    "name": "Morphine",
+    "level_of_healthcare": "P,S,T",
+    "section": "2",
+    "section_title": "Analgesics, Antipyretics, Non-steroidal Anti-inflammatory"
+  },
+  {
+    "code": "2.2.3",
+    "name": "Tramadol",
+    "level_of_healthcare": "S,T",
+    "section": "2",
+    "section_title": "Analgesics, Antipyretics, Non-steroidal Anti-inflammatory"
+  },
+  {
+    "code": "2.3.1",
+    "name": "Allopurinol",
+    "level_of_healthcare": "P,S,T",
+    "section": "2",
+    "section_title": "Analgesics, Antipyretics, Non-steroidal Anti-inflammatory"
+  },
+  {
+    "code": "2.3.2",
+    "name": "Colchicine",
+    "level_of_healthcare": "P,S,T",
+    "section": "2",
+    "section_title": "Analgesics, Antipyretics, Non-steroidal Anti-inflammatory"
+  },
+  {
+    "code": "2.4.1",
+    "name": "Azathioprine",
+    "level_of_healthcare": "S,T",
+    "section": "3",
+    "section_title": "Antiallergics and Medicines used in Anaphylaxis"
+  },
+  {
+    "code": "2.4.2",
+    "name": "Hydroxychloroquine",
+    "level_of_healthcare": "P,S,T",
+    "section": "3",
+    "section_title": "Antiallergics and Medicines used in Anaphylaxis"
+  },
+  {
+    "code": "2.4.3",
+    "name": "Methotrexate",
+    "level_of_healthcare": "P,S,T",
+    "section": "3",
+    "section_title": "Antiallergics and Medicines used in Anaphylaxis"
+  },
+  {
+    "code": "2.4.4",
+    "name": "Sulfasalazine",
+    "level_of_healthcare": "S,T",
+    "section": "3",
+    "section_title": "Antiallergics and Medicines used in Anaphylaxis"
+  },
+  {
+    "code": "4.1.1",
+    "name": "Activated Charcoal",
+    "level_of_healthcare": "P,S,T",
+    "section": "4",
+    "section_title": "Antidotes and Other Substances used in Management of"
+  },
+  {
+    "code": "4.2.1",
+    "name": "Atropine",
+    "level_of_healthcare": "P,S,T",
+    "section": "4",
+    "section_title": "Antidotes and Other Substances used in Management of"
+  },
+  {
+    "code": "4.2.2",
+    "name": "Calcium gluconate",
+    "level_of_healthcare": "P,S,T",
+    "section": "4",
+    "section_title": "Antidotes and Other Substances used in Management of"
+  },
+  {
+    "code": "4.2.3",
+    "name": "D- Penicillamine",
+    "level_of_healthcare": "P,S,T",
+    "section": "4",
+    "section_title": "Antidotes and Other Substances used in Management of"
+  },
+  {
+    "code": "4.2.4",
+    "name": "Desferrioxamine",
+    "level_of_healthcare": "S,T",
+    "section": "4",
+    "section_title": "Antidotes and Other Substances used in Management of"
+  },
+  {
+    "code": "4.2.5",
+    "name": "Methylthioninium chloride (Methylene blue)",
+    "level_of_healthcare": "S,T",
+    "section": "4",
+    "section_title": "Antidotes and Other Substances used in Management of"
+  },
+  {
+    "code": "4.2.6",
+    "name": "N-acetylcysteine",
+    "level_of_healthcare": "P,S,T",
+    "section": "4",
+    "section_title": "Antidotes and Other Substances used in Management of"
+  },
+  {
+    "code": "4.2.7",
+    "name": "Naloxone",
+    "level_of_healthcare": "P,S,T",
+    "section": "4",
+    "section_title": "Antidotes and Other Substances used in Management of"
+  },
+  {
+    "code": "4.2.8",
+    "name": "Neostigmine",
+    "level_of_healthcare": "P,S,T",
+    "section": "4",
+    "section_title": "Antidotes and Other Substances used in Management of"
+  },
+  {
+    "code": "4.2.9",
+    "name": "Pralidoxime chloride (2-PAM)",
+    "level_of_healthcare": "P,S,T",
+    "section": "4",
+    "section_title": "Antidotes and Other Substances used in Management of"
+  },
+  {
+    "code": "4.2.10",
+    "name": "Snake venom antiserum",
+    "level_of_healthcare": "P,S,T",
+    "section": "4",
+    "section_title": "Antidotes and Other Substances used in Management of"
+  },
+  {
+    "code": "4.2.11",
+    "name": "Sodium nitrite",
+    "level_of_healthcare": "S,T",
+    "section": "4",
+    "section_title": "Antidotes and Other Substances used in Management of"
+  },
+  {
+    "code": "4.2.12",
+    "name": "Sodium thiosulphate",
+    "level_of_healthcare": "S,T",
+    "section": "4",
+    "section_title": "Antidotes and Other Substances used in Management of"
+  },
+  {
+    "code": "5.1.1",
+    "name": "Carbamazepine",
+    "level_of_healthcare": "P,S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "5.1.2",
+    "name": "Clobazam",
+    "level_of_healthcare": "S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "5.1.3",
+    "name": "Diazepam",
+    "level_of_healthcare": "P,S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "5.1.4",
+    "name": "Levetiracetam",
+    "level_of_healthcare": "S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "5.1.5",
+    "name": "Lorazepam",
+    "level_of_healthcare": "P,S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "5.1.6",
+    "name": "Magnesium sulphate",
+    "level_of_healthcare": "S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "5.1.7",
+    "name": "Midazolam",
+    "level_of_healthcare": "P,S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "5.1.8",
+    "name": "Phenobarbitone",
+    "level_of_healthcare": "P,S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "5.1.9",
+    "name": "Phenytoin",
+    "level_of_healthcare": "P,S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "5.1.10",
+    "name": "Sodium Valproate",
+    "level_of_healthcare": "P,S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "5.2.1",
+    "name": "Acetylsalicylic acid",
+    "level_of_healthcare": "P,S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "5.2.2",
+    "name": "Ibuprofen",
+    "level_of_healthcare": "P,S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "5.2.3",
+    "name": "Paracetamol",
+    "level_of_healthcare": "P,S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "5.2.4",
+    "name": "Sumatriptan",
+    "level_of_healthcare": "P,S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "5.2.1.1",
+    "name": "Amitriptyline",
+    "level_of_healthcare": "P,S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "5.2.1.2",
+    "name": "Flunarizine",
+    "level_of_healthcare": "P,S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "5.2.1.3",
+    "name": "Propranolol",
+    "level_of_healthcare": "P,S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "5.3.1",
+    "name": "Levodopa (A) + Carbidopa (B)",
+    "level_of_healthcare": "P,S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "5.3.2",
+    "name": "Trihexyphenidyl",
+    "level_of_healthcare": "P,S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "5.4.1",
+    "name": "Donepezil",
+    "level_of_healthcare": "S,T",
+    "section": "5",
+    "section_title": "Medicines used in Neurological Disorders"
+  },
+  {
+    "code": "6.1.1.1",
+    "name": "Albendazole",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.1.1.2",
+    "name": "Mebendazole",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.1.2.1",
+    "name": "Albendazole",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.1.2.2",
+    "name": "Diethylcarbamazine (DEC)",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.1.2.3",
+    "name": "Ivermectin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.1.3.1",
+    "name": "Praziquantel",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.1.1",
+    "name": "Amoxicillin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.1.2",
+    "name": "Amoxicillin (A) + Clavulanic acid (B)",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.1.3",
+    "name": "Ampicillin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.1.4",
+    "name": "Benzathine benzylpenicillin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.1.5",
+    "name": "Benzylpenicillin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.1.6",
+    "name": "Cefadroxil",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.1.7",
+    "name": "Cefazolin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.1.8",
+    "name": "Cefixime",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.1.9",
+    "name": "Cefotaxime",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.1.10",
+    "name": "Ceftazidime",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.1.11",
+    "name": "Ceftriaxone",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.1.12",
+    "name": "Cloxacillin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.1.13",
+    "name": "Piperacillin (A) + Tazobactam (B)",
+    "level_of_healthcare": "T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.1.14",
+    "name": "Meropenem",
+    "level_of_healthcare": "T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.2.1",
+    "name": "Azithromycin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.2.2",
+    "name": "Cefuroxime",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.2.3",
+    "name": "Ciprofloxacin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.2.4",
+    "name": "Clarithromycin",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.2.5",
+    "name": "Clindamycin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.2.6",
+    "name": "Co-trimoxazole [Sulphamethoxazole (A) + Trimethoprim (B)]",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.2.7",
+    "name": "Doxycycline",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.2.8",
+    "name": "Gentamicin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.2.9",
+    "name": "Metronidazole",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.2.10",
+    "name": "Nitrofurantoin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.2.11",
+    "name": "Phenoxymethyl penicillin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.2.12",
+    "name": "Procaine Benzylpenicillin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.2.2.13",
+    "name": "Vancomycin",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.3.1",
+    "name": "Clofazimine",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.3.2",
+    "name": "Dapsone",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.3.3",
+    "name": "Rifampicin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.4.1",
+    "name": "Amikacin",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.4.2",
+    "name": "Bedaquiline",
+    "level_of_healthcare": "T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.4.3",
+    "name": "Clarithromycin",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.4.4",
+    "name": "Clofazimine",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.4.5",
+    "name": "Cycloserine",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.4.6",
+    "name": "Delamanid",
+    "level_of_healthcare": "T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.4.7",
+    "name": "Ethambutol",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.4.8",
+    "name": "Ethionamide",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.4.9",
+    "name": "Isoniazid",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.4.10",
+    "name": "Levofloxacin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.4.11",
+    "name": "Linezolid",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.4.12",
+    "name": "Moxifloxacin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.4.13",
+    "name": "Para- aminosalicylic acid",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.4.14",
+    "name": "Pyrazinamide",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.4.15",
+    "name": "Rifampicin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.4.16",
+    "name": "Streptomycin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.5.1",
+    "name": "Amphotericin B",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.5.2",
+    "name": "Clotrimazole",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.5.3",
+    "name": "Fluconazole",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.5.4",
+    "name": "Griseofulvin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.5.5",
+    "name": "Itraconazole",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.5.6",
+    "name": "Mupirocin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.5.7",
+    "name": "Nystatin",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.5.8",
+    "name": "Terbinafine",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.6.1.1",
+    "name": "Acyclovir",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.6.2.1",
+    "name": "Valganciclovir",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.1.1",
+    "name": "Abacavir",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.1.2",
+    "name": "Abacavir (A) + Lamivudine (B)",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.1.3",
+    "name": "Lamivudine",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.1.4",
+    "name": "Tenofovir Disproxil Fumarate (TDF)",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.1.5",
+    "name": "Tenofovir Disproxil Fumarate (A) + Lamivudine (B)",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.1.6",
+    "name": "Tenofovir Disproxil Fumarate (A) + Lamivudine (B) + Dolutegravir (C)",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.1.7",
+    "name": "Tenofovir Disproxil Fumarate (A) + Lamivudine (B) + Efavirenz (C)",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.1.8",
+    "name": "Zidovudine",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.1.9",
+    "name": "Zidovudine (A) + Lamivudine (B)",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.1.10",
+    "name": "Zidovudine (A) + Lamivudine (B) + Nevirapine (C)",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.2.1",
+    "name": "Efavirenz",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.2.2",
+    "name": "Nevirapine",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.3.1",
+    "name": "Dolutegravir",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.3.2",
+    "name": "Raltegravir",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.4.1",
+    "name": "Atazanavir (A) + Ritonavir (B)",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.4.2",
+    "name": "Darunavir",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.4.3",
+    "name": "Darunavir (A) + Ritonavir (B)",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.4.4",
+    "name": "Lopinavir (A) + Ritonavir (B)",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.4.5",
+    "name": "Ritonavir",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.5.1",
+    "name": "Acyclovir",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.5.2",
+    "name": "Cefotaxime",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.5.3",
+    "name": "Clindamycin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.5.4",
+    "name": "Clotrimazole",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.5.5",
+    "name": "Valganciclovir",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.7.6.1",
+    "name": "Azithromycin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.8.1",
+    "name": "Daclatasvir",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.8.2",
+    "name": "Entecavir",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.8.3",
+    "name": "Ribavirin",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.8.4",
+    "name": "Sofosbuvir",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.8.5",
+    "name": "Tenofovir Alafenamide Fumarate (TAF)",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.8.6",
+    "name": "Tenofovir Disproxil Fumarate (TDF)",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.9.1.1",
+    "name": "Metronidazole",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.9.2.1",
+    "name": "Amphotericin B",
+    "level_of_healthcare": "S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.9.2.2",
+    "name": "Miltefosine",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.9.2.3",
+    "name": "Paromomycin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.9.3.1",
+    "name": "Clindamycin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.9.3.2",
+    "name": "Co-trimoxazole [Sulphamethoxazole (A) + Trimethoprim (B)]",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.10.1.1",
+    "name": "Artemether (A) + Lumefantrine (B)",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.10.1.2",
+    "name": "Artesunate",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.10.1.3",
+    "name": "Artesunate (A) + Sulphadoxine - Pyrimethamine (B)",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.10.1.4",
+    "name": "Chloroquine",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.10.1.5",
+    "name": "Clindamycin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.10.1.6",
+    "name": "Primaquine",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.10.1.7",
+    "name": "Quinine",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.10.2.1",
+    "name": "Doxycycline #",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "6.10.2.2",
+    "name": "Mefloquine #",
+    "level_of_healthcare": "T",
+    "section": "6",
+    "section_title": "Anti-infective Medicines"
+  },
+  {
+    "code": "7.1.3",
+    "name": "Actinomycin D",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.4",
+    "name": "All-trans retinoic acid",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.5",
+    "name": "Arsenic trioxide",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.6",
+    "name": "Bendamustine hydrochloride",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.7",
+    "name": "Bleomycin",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.8",
+    "name": "Bortezomib",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.9",
+    "name": "Calcium folinate",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.10",
+    "name": "Capecitabine",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.11",
+    "name": "Carboplatin",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.12",
+    "name": "Chlorambucil",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.13",
+    "name": "Cisplatin",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.14",
+    "name": "Cyclophosphamide",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.15",
+    "name": "Cytosine arabinoside",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.16",
+    "name": "Dacarbazine",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.17",
+    "name": "Daunorubicin",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.18",
+    "name": "Docetaxel",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.19",
+    "name": "Doxorubicin",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.20",
+    "name": "Etoposide",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.21",
+    "name": "Gefitinib",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.22",
+    "name": "Gemcitabine",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.23",
+    "name": "Hydroxyurea",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.24",
+    "name": "Ifosfamide",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.25",
+    "name": "Imatinib",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.26",
+    "name": "Irinotecan HCl trihydrate",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.27",
+    "name": "L-Asparaginase",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.28",
+    "name": "Lenalidomide",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.29",
+    "name": "Melphalan",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.30",
+    "name": "Methotrexate",
+    "level_of_healthcare": "S,T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.31",
+    "name": "Oxaliplatin",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.32",
+    "name": "Paclitaxel",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.33",
+    "name": "Rituximab",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.34",
+    "name": "Temozolomide",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.35",
+    "name": "Thalidomide",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.36",
+    "name": "Trastuzumab",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.37",
+    "name": "Vinblastine",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.1.38",
+    "name": "Vincristine",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.2.1",
+    "name": "Bicalutamide",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.2.2",
+    "name": "Letrozole",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.2.3",
+    "name": "Leuprolide acetate",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.2.4",
+    "name": "Prednisolone",
+    "level_of_healthcare": "S,T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.2.5",
+    "name": "Tamoxifen",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.3.1",
+    "name": "Azathioprine",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.3.2",
+    "name": "Cyclosporine",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.3.3",
+    "name": "Mycophenolate mofetil",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.3.4",
+    "name": "Tacrolimus",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.4.1",
+    "name": "Allopurinol",
+    "level_of_healthcare": "S,T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.4.2",
+    "name": "Amitriptyline",
+    "level_of_healthcare": "S,T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.4.3",
+    "name": "Dexamethasone",
+    "level_of_healthcare": "S,T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.4.4",
+    "name": "Diazepam",
+    "level_of_healthcare": "S,T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.4.5",
+    "name": "Filgrastim",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.4.6",
+    "name": "Fluoxetine",
+    "level_of_healthcare": "S,T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.4.7",
+    "name": "Haloperidol",
+    "level_of_healthcare": "S,T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.4.8",
+    "name": "Lactulose",
+    "level_of_healthcare": "S,T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.4.9",
+    "name": "Loperamide",
+    "level_of_healthcare": "S,T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.4.10",
+    "name": "Metoclopramide",
+    "level_of_healthcare": "S,T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.4.11",
+    "name": "Mesna",
+    "level_of_healthcare": "T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.4.12",
+    "name": "Midazolam",
+    "level_of_healthcare": "S,T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.4.13",
+    "name": "Morphine",
+    "level_of_healthcare": "S,T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.4.14",
+    "name": "Ondansetron",
+    "level_of_healthcare": "S,T",
+    "section": "7",
+    "section_title": "Anti-cancer agents including Immunosuppressives and Medicines"
+  },
+  {
+    "code": "7.4.15",
+    "name": "Tramadol",
+    "level_of_healthcare": "S,T",
+    "section": "8",
+    "section_title": "Medicines affecting Blood"
+  },
+  {
+    "code": "7.4.16",
+    "name": "Zoledronic acid",
+    "level_of_healthcare": "T",
+    "section": "8",
+    "section_title": "Medicines affecting Blood"
+  },
+  {
+    "code": "8.1.1",
+    "name": "Erythropoietin",
+    "level_of_healthcare": "S,T",
+    "section": "8",
+    "section_title": "Medicines affecting Blood"
+  },
+  {
+    "code": "8.1.2",
+    "name": "Ferrous salts (a) Iron Dextran (b) Iron sorbitol citrate complex",
+    "level_of_healthcare": "P,S,T",
+    "section": "8",
+    "section_title": "Medicines affecting Blood"
+  },
+  {
+    "code": "8.1.3",
+    "name": "Ferrous Salt (A)+ Folic acid (B)",
+    "level_of_healthcare": "P,S,T",
+    "section": "8",
+    "section_title": "Medicines affecting Blood"
+  },
+  {
+    "code": "8.1.4",
+    "name": "Folic Acid",
+    "level_of_healthcare": "P,S,T",
+    "section": "8",
+    "section_title": "Medicines affecting Blood"
+  },
+  {
+    "code": "8.1.5",
+    "name": "Hydroxocobalamin",
+    "level_of_healthcare": "P,S,T",
+    "section": "8",
+    "section_title": "Medicines affecting Blood"
+  },
+  {
+    "code": "8.1.6",
+    "name": "Hydroxyurea",
+    "level_of_healthcare": "S,T",
+    "section": "8",
+    "section_title": "Medicines affecting Blood"
+  },
+  {
+    "code": "8.1.7",
+    "name": "Iron sucrose",
+    "level_of_healthcare": "S,T",
+    "section": "8",
+    "section_title": "Medicines affecting Blood"
+  },
+  {
+    "code": "8.2.1",
+    "name": "Enoxaparin",
+    "level_of_healthcare": "S,T",
+    "section": "8",
+    "section_title": "Medicines affecting Blood"
+  },
+  {
+    "code": "8.2.2",
+    "name": "Heparin",
+    "level_of_healthcare": "S,T",
+    "section": "8",
+    "section_title": "Medicines affecting Blood"
+  },
+  {
+    "code": "8.2.3",
+    "name": "Phytomenadione (Vitamin K1)",
+    "level_of_healthcare": "P,S,T",
+    "section": "8",
+    "section_title": "Medicines affecting Blood"
+  },
+  {
+    "code": "8.2.4",
+    "name": "Protamine Sulphate",
+    "level_of_healthcare": "S,T",
+    "section": "8",
+    "section_title": "Medicines affecting Blood"
+  },
+  {
+    "code": "8.2.5",
+    "name": "Tranexamic acid",
+    "level_of_healthcare": "P,S,T",
+    "section": "8",
+    "section_title": "Medicines affecting Blood"
+  },
+  {
+    "code": "8.2.6",
+    "name": "Warfarin",
+    "level_of_healthcare": "S,T",
+    "section": "9",
+    "section_title": "Blood products and Plasma substitutes"
+  },
+  {
+    "code": "9.1.1",
+    "name": "Fresh frozen plasma",
+    "level_of_healthcare": "S,T",
+    "section": "9",
+    "section_title": "Blood products and Plasma substitutes"
+  },
+  {
+    "code": "9.1.2",
+    "name": "Platelet rich plasma/ Platelet concentrates",
+    "level_of_healthcare": "S,T",
+    "section": "9",
+    "section_title": "Blood products and Plasma substitutes"
+  },
+  {
+    "code": "9.1.3",
+    "name": "Red blood cells/ Packed RBCs",
+    "level_of_healthcare": "S,T",
+    "section": "9",
+    "section_title": "Blood products and Plasma substitutes"
+  },
+  {
+    "code": "9.1.4",
+    "name": "Whole blood",
+    "level_of_healthcare": "S,T",
+    "section": "9",
+    "section_title": "Blood products and Plasma substitutes"
+  },
+  {
+    "code": "9.2.1",
+    "name": "Dextran-40",
+    "level_of_healthcare": "S,T",
+    "section": "9",
+    "section_title": "Blood products and Plasma substitutes"
+  },
+  {
+    "code": "9.3.1",
+    "name": "Coagulation factor IX",
+    "level_of_healthcare": "S,T",
+    "section": "9",
+    "section_title": "Blood products and Plasma substitutes"
+  },
+  {
+    "code": "9.3.2",
+    "name": "Coagulation factor VIII",
+    "level_of_healthcare": "S,T",
+    "section": "9",
+    "section_title": "Blood products and Plasma substitutes"
+  },
+  {
+    "code": "9.3.3",
+    "name": "Cryoprecipitate",
+    "level_of_healthcare": "S,T",
+    "section": "9",
+    "section_title": "Blood products and Plasma substitutes"
+  },
+  {
+    "code": "10.1.1",
+    "name": "Diltiazem",
+    "level_of_healthcare": "P,S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.1.2",
+    "name": "Glyceryl trinitrate",
+    "level_of_healthcare": "P,S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.1.3",
+    "name": "Isosorbide dinitrate",
+    "level_of_healthcare": "P,S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.1.4",
+    "name": "Metoprolol",
+    "level_of_healthcare": "P,S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.2.1",
+    "name": "Adenosine",
+    "level_of_healthcare": "S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.2.2",
+    "name": "Amiodarone",
+    "level_of_healthcare": "S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.2.3",
+    "name": "Digoxin",
+    "level_of_healthcare": "S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.2.4",
+    "name": "Esmolol",
+    "level_of_healthcare": "S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.2.5",
+    "name": "Lignocaine",
+    "level_of_healthcare": "S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.2.6",
+    "name": "Verapamil",
+    "level_of_healthcare": "S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.3.1",
+    "name": "Amlodipine",
+    "level_of_healthcare": "P,S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.3.2",
+    "name": "Enalapril",
+    "level_of_healthcare": "P,S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.3.3",
+    "name": "Hydrochlorothiazide",
+    "level_of_healthcare": "P,S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.3.4",
+    "name": "Labetalol",
+    "level_of_healthcare": "P,S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.3.5",
+    "name": "Ramipril",
+    "level_of_healthcare": "P,S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.3.6",
+    "name": "Sodium nitroprusside",
+    "level_of_healthcare": "S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.3.7",
+    "name": "Telmisartan",
+    "level_of_healthcare": "P,S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.4.1",
+    "name": "Digoxin",
+    "level_of_healthcare": "S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.4.2",
+    "name": "Dobutamine",
+    "level_of_healthcare": "S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.4.3",
+    "name": "Dopamine",
+    "level_of_healthcare": "S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.4.4",
+    "name": "Noradrenaline",
+    "level_of_healthcare": "S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.4.5",
+    "name": "Spironolactone",
+    "level_of_healthcare": "P,S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.5.1",
+    "name": "Acetylsalicylic acid",
+    "level_of_healthcare": "P,S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.5.2",
+    "name": "Clopidogrel",
+    "level_of_healthcare": "P,S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.5.3",
+    "name": "Dabigatran",
+    "level_of_healthcare": "S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.5.4",
+    "name": "Enoxaparin",
+    "level_of_healthcare": "S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.5.5",
+    "name": "Heparin",
+    "level_of_healthcare": "S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.5.6",
+    "name": "Streptokinase",
+    "level_of_healthcare": "S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.5.7",
+    "name": "Tenecteplase",
+    "level_of_healthcare": "S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "10.6.1",
+    "name": "Atorvastatin",
+    "level_of_healthcare": "P,S,T",
+    "section": "10",
+    "section_title": "Cardiovascular Medicines"
+  },
+  {
+    "code": "11.1.1",
+    "name": "Clotrimazole",
+    "level_of_healthcare": "P,S,T",
+    "section": "11",
+    "section_title": "Dermatological Medicines (Topical)"
+  },
+  {
+    "code": "11.2.1",
+    "name": "Framycetin",
+    "level_of_healthcare": "P,S,T",
+    "section": "11",
+    "section_title": "Dermatological Medicines (Topical)"
+  },
+  {
+    "code": "11.2.2",
+    "name": "Fusidic acid",
+    "level_of_healthcare": "P,S,T",
+    "section": "11",
+    "section_title": "Dermatological Medicines (Topical)"
+  },
+  {
+    "code": "11.2.3",
+    "name": "Silver sulphadiazine",
+    "level_of_healthcare": "P,S,T",
+    "section": "11",
+    "section_title": "Dermatological Medicines (Topical)"
+  },
+  {
+    "code": "11.3.1",
+    "name": "Betamethasone valerate",
+    "level_of_healthcare": "P,S,T",
+    "section": "11",
+    "section_title": "Dermatological Medicines (Topical)"
+  },
+  {
+    "code": "11.3.2",
+    "name": "Calamine",
+    "level_of_healthcare": "P,S,T",
+    "section": "11",
+    "section_title": "Dermatological Medicines (Topical)"
+  },
+  {
+    "code": "11.4.1",
+    "name": "Benzoyl peroxide",
+    "level_of_healthcare": "P,S,T",
+    "section": "11",
+    "section_title": "Dermatological Medicines (Topical)"
+  },
+  {
+    "code": "11.4.2",
+    "name": "Coal tar (A) + Salicylic Acid (B)",
+    "level_of_healthcare": "P,S,T",
+    "section": "11",
+    "section_title": "Dermatological Medicines (Topical)"
+  },
+  {
+    "code": "11.4.3",
+    "name": "Podophyllin resin",
+    "level_of_healthcare": "S,T",
+    "section": "11",
+    "section_title": "Dermatological Medicines (Topical)"
+  },
+  {
+    "code": "11.4.4",
+    "name": "Salicylic acid",
+    "level_of_healthcare": "P,S,T",
+    "section": "11",
+    "section_title": "Dermatological Medicines (Topical)"
+  },
+  {
+    "code": "11.5.1",
+    "name": "Permethrin",
+    "level_of_healthcare": "P,S,T",
+    "section": "11",
+    "section_title": "Dermatological Medicines (Topical)"
+  },
+  {
+    "code": "11.6.1",
+    "name": "Glycerin/glycerol (as mentioned in IP)",
+    "level_of_healthcare": "P,S,T",
+    "section": "11",
+    "section_title": "Dermatological Medicines (Topical)"
+  },
+  {
+    "code": "12.1.1",
+    "name": "Fluorescein",
+    "level_of_healthcare": "S,T",
+    "section": "12",
+    "section_title": "Diagnostic agents"
+  },
+  {
+    "code": "12.1.2",
+    "name": "Proparacaine",
+    "level_of_healthcare": "S,T",
+    "section": "12",
+    "section_title": "Diagnostic agents"
+  },
+  {
+    "code": "12.1.3",
+    "name": "Tropicamide",
+    "level_of_healthcare": "S,T",
+    "section": "12",
+    "section_title": "Diagnostic agents"
+  },
+  {
+    "code": "12.2.1",
+    "name": "Barium sulphate",
+    "level_of_healthcare": "S,T",
+    "section": "12",
+    "section_title": "Diagnostic agents"
+  },
+  {
+    "code": "12.2.2",
+    "name": "Gadobenate dimeglumine",
+    "level_of_healthcare": "T",
+    "section": "12",
+    "section_title": "Diagnostic agents"
+  },
+  {
+    "code": "12.2.3",
+    "name": "Iohexol",
+    "level_of_healthcare": "S,T",
+    "section": "12",
+    "section_title": "Diagnostic agents"
+  },
+  {
+    "code": "12.2.4",
+    "name": "Meglumine diatrizoate",
+    "level_of_healthcare": "S,T",
+    "section": "12",
+    "section_title": "Diagnostic agents"
+  },
+  {
+    "code": "14.1.1",
+    "name": "Chlorhexidine",
+    "level_of_healthcare": "P,S,T",
+    "section": "14",
+    "section_title": "Antiseptics and Disinfectants"
+  },
+  {
+    "code": "14.1.2",
+    "name": "Ethyl alcohol (Denatured)",
+    "level_of_healthcare": "P,S,T",
+    "section": "14",
+    "section_title": "Antiseptics and Disinfectants"
+  },
+  {
+    "code": "14.1.3",
+    "name": "Hydrogen peroxide",
+    "level_of_healthcare": "P,S,T",
+    "section": "14",
+    "section_title": "Antiseptics and Disinfectants"
+  },
+  {
+    "code": "14.1.4",
+    "name": "Methylrosanilinium chloride (Gentian Violet)",
+    "level_of_healthcare": "P,S,T",
+    "section": "14",
+    "section_title": "Antiseptics and Disinfectants"
+  },
+  {
+    "code": "14.1.5",
+    "name": "Povidone iodine",
+    "level_of_healthcare": "P,S,T",
+    "section": "14",
+    "section_title": "Antiseptics and Disinfectants"
+  },
+  {
+    "code": "14.2.1",
+    "name": "Glutaraldehyde",
+    "level_of_healthcare": "S,T",
+    "section": "15",
+    "section_title": "Diuretics"
+  },
+  {
+    "code": "14.2.2",
+    "name": "Potassium permanganate",
+    "level_of_healthcare": "P,S,T",
+    "section": "15",
+    "section_title": "Diuretics"
+  },
+  {
+    "code": "17.1.1",
+    "name": "Omeprazole",
+    "level_of_healthcare": "P,S,T",
+    "section": "17",
+    "section_title": "Gastrointestinal Medicines"
+  },
+  {
+    "code": "17.1.2",
+    "name": "Pantoprazole",
+    "level_of_healthcare": "S,T",
+    "section": "17",
+    "section_title": "Gastrointestinal Medicines"
+  },
+  {
+    "code": "17.2.1",
+    "name": "Domperidone",
+    "level_of_healthcare": "P,S,T",
+    "section": "17",
+    "section_title": "Gastrointestinal Medicines"
+  },
+  {
+    "code": "17.2.2",
+    "name": "Metoclopramide",
+    "level_of_healthcare": "P,S,T",
+    "section": "17",
+    "section_title": "Gastrointestinal Medicines"
+  },
+  {
+    "code": "17.2.3",
+    "name": "Ondansetron",
+    "level_of_healthcare": "S,T",
+    "section": "17",
+    "section_title": "Gastrointestinal Medicines"
+  },
+  {
+    "code": "17.4.1",
+    "name": "Dicyclomine",
+    "level_of_healthcare": "P,S,T",
+    "section": "17",
+    "section_title": "Gastrointestinal Medicines"
+  },
+  {
+    "code": "17.4.2",
+    "name": "Hyoscine butyl bromide",
+    "level_of_healthcare": "P,S,T",
+    "section": "17",
+    "section_title": "Gastrointestinal Medicines"
+  },
+  {
+    "code": "17.5.1",
+    "name": "Bisacodyl",
+    "level_of_healthcare": "P,S,T",
+    "section": "17",
+    "section_title": "Gastrointestinal Medicines"
+  },
+  {
+    "code": "17.5.2",
+    "name": "Ispaghula",
+    "level_of_healthcare": "P,S,T",
+    "section": "17",
+    "section_title": "Gastrointestinal Medicines"
+  },
+  {
+    "code": "17.5.3",
+    "name": "Lactulose",
+    "level_of_healthcare": "S,T",
+    "section": "17",
+    "section_title": "Gastrointestinal Medicines"
+  },
+  {
+    "code": "17.6.1",
+    "name": "Oral rehydration salts",
+    "level_of_healthcare": "P,S,T",
+    "section": "17",
+    "section_title": "Gastrointestinal Medicines"
+  },
+  {
+    "code": "17.6.2",
+    "name": "Zinc Sulphate",
+    "level_of_healthcare": "P,S,T",
+    "section": "17",
+    "section_title": "Gastrointestinal Medicines"
+  },
+  {
+    "code": "17.7.1",
+    "name": "Somatostatin",
+    "level_of_healthcare": "T",
+    "section": "17",
+    "section_title": "Gastrointestinal Medicines"
+  },
+  {
+    "code": "18.1.1",
+    "name": "Dexamethasone",
+    "level_of_healthcare": "S,T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.1.2",
+    "name": "Fludrocortisone",
+    "level_of_healthcare": "S,T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.1.3",
+    "name": "Hydrocortisone",
+    "level_of_healthcare": "P,S,T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.1.4",
+    "name": "Methylprednisolone",
+    "level_of_healthcare": "S,T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.1.5",
+    "name": "Prednisolone",
+    "level_of_healthcare": "P,S,T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.2.1.1",
+    "name": "Ethinylestradiol (A)+ Levonorgestrel (B)",
+    "level_of_healthcare": "P,S,T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.2.1.2",
+    "name": "Levonorgestrel",
+    "level_of_healthcare": "P,S,T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.2.1.3",
+    "name": "Ormeloxifene (Centchroman)",
+    "level_of_healthcare": "P,S,T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.2.2.1",
+    "name": "Hormone releasing IUD",
+    "level_of_healthcare": "T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.2.2.2",
+    "name": "IUD containing Copper",
+    "level_of_healthcare": "P,S,T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.2.3.1",
+    "name": "Condom",
+    "level_of_healthcare": "P,S,T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.3.1.1",
+    "name": "Glimepiride",
+    "level_of_healthcare": "P,S,T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.3.1.2",
+    "name": "Insulin (Soluble)",
+    "level_of_healthcare": "P,S,T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.3.1.3",
+    "name": "Insulin Intermediate Acting (NPH)",
+    "level_of_healthcare": "P,S,T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.3.1.4",
+    "name": "Insulin Glargine",
+    "level_of_healthcare": "P,S,T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.3.1.5",
+    "name": "Insulin Premix Injection 30:70 (Regular : NPH)",
+    "level_of_healthcare": "P,S,T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.3.1.6",
+    "name": "Metformin",
+    "level_of_healthcare": "P,S,T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.3.1.7",
+    "name": "Teneligliptin",
+    "level_of_healthcare": "P,S,T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.3.2.1",
+    "name": "Glucose",
+    "level_of_healthcare": "P,S,T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.4.1",
+    "name": "Clomiphene citrate",
+    "level_of_healthcare": "T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.4.2",
+    "name": "Human chorionic gonadotropin",
+    "level_of_healthcare": "S,T",
+    "section": "18",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "18.5.1",
+    "name": "Medroxyprogesterone acetate",
+    "level_of_healthcare": "P,S,T",
+    "section": "19",
+    "section_title": "Immunologicals"
+  },
+  {
+    "code": "18.5.2",
+    "name": "Norethisterone",
+    "level_of_healthcare": "P,S,T",
+    "section": "19",
+    "section_title": "Immunologicals"
+  },
+  {
+    "code": "18.6.1",
+    "name": "Carbimazole",
+    "level_of_healthcare": "P,S,T",
+    "section": "19",
+    "section_title": "Immunologicals"
+  },
+  {
+    "code": "18.6.2",
+    "name": "Levothyroxine",
+    "level_of_healthcare": "P,S,T",
+    "section": "19",
+    "section_title": "Immunologicals"
+  },
+  {
+    "code": "19.1.1",
+    "name": "Tuberculin, Purified Protein derivative",
+    "level_of_healthcare": "P,S,T",
+    "section": "19",
+    "section_title": "Immunologicals"
+  },
+  {
+    "code": "19.2.1",
+    "name": "Anti-rabies immunoglobulin",
+    "level_of_healthcare": "P,S,T",
+    "section": "19",
+    "section_title": "Immunologicals"
+  },
+  {
+    "code": "19.2.2",
+    "name": "Anti-tetanus immunoglobulin",
+    "level_of_healthcare": "P,S,T",
+    "section": "19",
+    "section_title": "Immunologicals"
+  },
+  {
+    "code": "19.2.3",
+    "name": "Anti-D immunoglobulin",
+    "level_of_healthcare": "S,T",
+    "section": "19",
+    "section_title": "Immunologicals"
+  },
+  {
+    "code": "19.2.4",
+    "name": "Diphtheria antitoxin",
+    "level_of_healthcare": "P,S,T",
+    "section": "19",
+    "section_title": "Immunologicals"
+  },
+  {
+    "code": "19.2.5",
+    "name": "Hepatitis B immunoglobulin",
+    "level_of_healthcare": "S,T",
+    "section": "19",
+    "section_title": "Immunologicals"
+  },
+  {
+    "code": "19.2.6",
+    "name": "Human normal immunoglobulin",
+    "level_of_healthcare": "T",
+    "section": "19",
+    "section_title": "Immunologicals"
+  },
+  {
+    "code": "19.2.7",
+    "name": "Snake Venom Antiserum",
+    "level_of_healthcare": "P,S,T",
+    "section": "19",
+    "section_title": "Immunologicals"
+  },
+  {
+    "code": "19.3.1",
+    "name": "BCG vaccine",
+    "level_of_healthcare": "P,S,T",
+    "section": "19",
+    "section_title": "Immunologicals"
+  },
+  {
+    "code": "19.3.2",
+    "name": "DPT+ Hib+ Hep B vaccine",
+    "level_of_healthcare": "P,S,T",
+    "section": "19",
+    "section_title": "Immunologicals"
+  },
+  {
+    "code": "19.3.3",
+    "name": "DPT vaccine",
+    "level_of_healthcare": "P,S,T",
+    "section": "19",
+    "section_title": "Immunologicals"
+  },
+  {
+    "code": "19.3.4",
+    "name": "Hepatitis B vaccine",
+    "level_of_healthcare": "P,S,T",
+    "section": "19",
+    "section_title": "Immunologicals"
+  },
+  {
+    "code": "19.3.5",
+    "name": "Japanese encephalitis vaccine",
+    "level_of_healthcare": "P,S,T",
+    "section": "19",
+    "section_title": "Immunologicals"
+  },
+  {
+    "code": "19.3.6",
+    "name": "Measles vaccine",
+    "level_of_healthcare": "P,S,T",
+    "section": "20",
+    "section_title": "Medicines for Neonatal Care"
+  },
+  {
+    "code": "19.3.7",
+    "name": "Oral poliomyelitis vaccine",
+    "level_of_healthcare": "P,S,T",
+    "section": "20",
+    "section_title": "Medicines for Neonatal Care"
+  },
+  {
+    "code": "19.3.8",
+    "name": "Rotavirus vaccine",
+    "level_of_healthcare": "P,S,T",
+    "section": "20",
+    "section_title": "Medicines for Neonatal Care"
+  },
+  {
+    "code": "19.3.9",
+    "name": "Tetanus toxoid",
+    "level_of_healthcare": "P,S,T",
+    "section": "20",
+    "section_title": "Medicines for Neonatal Care"
+  },
+  {
+    "code": "19.4.1",
+    "name": "Rabies vaccine",
+    "level_of_healthcare": "P,S,T",
+    "section": "20",
+    "section_title": "Medicines for Neonatal Care"
+  },
+  {
+    "code": "21.1.1",
+    "name": "Acyclovir",
+    "level_of_healthcare": "P,S,T",
+    "section": "21",
+    "section_title": "Ophthalmological Medicines"
+  },
+  {
+    "code": "21.1.2",
+    "name": "Ciprofloxacin",
+    "level_of_healthcare": "P,S,T",
+    "section": "21",
+    "section_title": "Ophthalmological Medicines"
+  },
+  {
+    "code": "21.1.3",
+    "name": "Natamycin",
+    "level_of_healthcare": "P,S,T",
+    "section": "21",
+    "section_title": "Ophthalmological Medicines"
+  },
+  {
+    "code": "21.1.4",
+    "name": "Povidone iodine",
+    "level_of_healthcare": "P,S,T",
+    "section": "21",
+    "section_title": "Ophthalmological Medicines"
+  },
+  {
+    "code": "21.2.1",
+    "name": "Prednisolone",
+    "level_of_healthcare": "P,S,T",
+    "section": "21",
+    "section_title": "Ophthalmological Medicines"
+  },
+  {
+    "code": "21.3.1",
+    "name": "Proparacaine",
+    "level_of_healthcare": "P,S,T",
+    "section": "21",
+    "section_title": "Ophthalmological Medicines"
+  },
+  {
+    "code": "21.4.1",
+    "name": "Acetazolamide",
+    "level_of_healthcare": "P,S,T",
+    "section": "21",
+    "section_title": "Ophthalmological Medicines"
+  },
+  {
+    "code": "21.4.2",
+    "name": "Latanoprost",
+    "level_of_healthcare": "P,S,T",
+    "section": "21",
+    "section_title": "Ophthalmological Medicines"
+  },
+  {
+    "code": "21.4.3",
+    "name": "Pilocarpine",
+    "level_of_healthcare": "P,S,T",
+    "section": "21",
+    "section_title": "Ophthalmological Medicines"
+  },
+  {
+    "code": "21.4.4",
+    "name": "Timolol",
+    "level_of_healthcare": "P,S,T",
+    "section": "21",
+    "section_title": "Ophthalmological Medicines"
+  },
+  {
+    "code": "21.5.1",
+    "name": "Atropine",
+    "level_of_healthcare": "P,S,T",
+    "section": "21",
+    "section_title": "Ophthalmological Medicines"
+  },
+  {
+    "code": "21.5.2",
+    "name": "Homatropine",
+    "level_of_healthcare": "P,S,T",
+    "section": "22",
+    "section_title": "Oxytocics and Antioxytocics"
+  },
+  {
+    "code": "21.5.3",
+    "name": "Phenylephrine",
+    "level_of_healthcare": "P,S,T",
+    "section": "22",
+    "section_title": "Oxytocics and Antioxytocics"
+  },
+  {
+    "code": "21.5.4",
+    "name": "Tropicamide",
+    "level_of_healthcare": "P,S,T",
+    "section": "22",
+    "section_title": "Oxytocics and Antioxytocics"
+  },
+  {
+    "code": "21.6.1",
+    "name": "Carboxymethyl cellulose",
+    "level_of_healthcare": "P,S,T",
+    "section": "22",
+    "section_title": "Oxytocics and Antioxytocics"
+  },
+  {
+    "code": "21.6.2",
+    "name": "Hydroxypropyl methylcellulose",
+    "level_of_healthcare": "T",
+    "section": "22",
+    "section_title": "Oxytocics and Antioxytocics"
+  },
+  {
+    "code": "22.1.1",
+    "name": "Dinoprostone",
+    "level_of_healthcare": "S,T",
+    "section": "22",
+    "section_title": "Oxytocics and Antioxytocics"
+  },
+  {
+    "code": "22.1.2",
+    "name": "Methylergometrine",
+    "level_of_healthcare": "P,S,T",
+    "section": "22",
+    "section_title": "Oxytocics and Antioxytocics"
+  },
+  {
+    "code": "22.1.3",
+    "name": "Mifepristone",
+    "level_of_healthcare": "P,S,T",
+    "section": "23",
+    "section_title": "Medicines used in treatment of Psychiatric Disorders"
+  },
+  {
+    "code": "22.1.4",
+    "name": "Misoprostol",
+    "level_of_healthcare": "P,S,T",
+    "section": "23",
+    "section_title": "Medicines used in treatment of Psychiatric Disorders"
+  },
+  {
+    "code": "22.1.5",
+    "name": "Oxytocin",
+    "level_of_healthcare": "P,S,T",
+    "section": "23",
+    "section_title": "Medicines used in treatment of Psychiatric Disorders"
+  },
+  {
+    "code": "22.2.1",
+    "name": "Betamethasone",
+    "level_of_healthcare": "P,S,T",
+    "section": "23",
+    "section_title": "Medicines used in treatment of Psychiatric Disorders"
+  },
+  {
+    "code": "22.2.2",
+    "name": "Nifedipine",
+    "level_of_healthcare": "S,T",
+    "section": "23",
+    "section_title": "Medicines used in treatment of Psychiatric Disorders"
+  },
+  {
+    "code": "23.1.1",
+    "name": "Clozapine",
+    "level_of_healthcare": "T",
+    "section": "23",
+    "section_title": "Medicines used in treatment of Psychiatric Disorders"
+  },
+  {
+    "code": "23.1.2",
+    "name": "Fluphenazine",
+    "level_of_healthcare": "P,S,T",
+    "section": "23",
+    "section_title": "Medicines used in treatment of Psychiatric Disorders"
+  },
+  {
+    "code": "23.1.3",
+    "name": "Haloperidol",
+    "level_of_healthcare": "S,T",
+    "section": "23",
+    "section_title": "Medicines used in treatment of Psychiatric Disorders"
+  },
+  {
+    "code": "23.1.4",
+    "name": "Risperidone",
+    "level_of_healthcare": "P,S,T",
+    "section": "23",
+    "section_title": "Medicines used in treatment of Psychiatric Disorders"
+  },
+  {
+    "code": "23.2.1.1",
+    "name": "Amitriptyline",
+    "level_of_healthcare": "P,S,T",
+    "section": "23",
+    "section_title": "Medicines used in treatment of Psychiatric Disorders"
+  },
+  {
+    "code": "23.2.1.2",
+    "name": "Escitalopram",
+    "level_of_healthcare": "P,S,T",
+    "section": "23",
+    "section_title": "Medicines used in treatment of Psychiatric Disorders"
+  },
+  {
+    "code": "23.2.1.3",
+    "name": "Fluoxetine",
+    "level_of_healthcare": "P,S,T",
+    "section": "23",
+    "section_title": "Medicines used in treatment of Psychiatric Disorders"
+  },
+  {
+    "code": "23.2.2.1",
+    "name": "Lithium",
+    "level_of_healthcare": "S,T",
+    "section": "23",
+    "section_title": "Medicines used in treatment of Psychiatric Disorders"
+  },
+  {
+    "code": "23.2.2.2",
+    "name": "Sodium valproate",
+    "level_of_healthcare": "P,S,T",
+    "section": "23",
+    "section_title": "Medicines used in treatment of Psychiatric Disorders"
+  },
+  {
+    "code": "23.2.2.3",
+    "name": "Carbamazepine",
+    "level_of_healthcare": "P,S,T",
+    "section": "23",
+    "section_title": "Medicines used in treatment of Psychiatric Disorders"
+  },
+  {
+    "code": "23.3.1",
+    "name": "Clonazepam",
+    "level_of_healthcare": "P,S,T",
+    "section": "23",
+    "section_title": "Medicines used in treatment of Psychiatric Disorders"
+  },
+  {
+    "code": "23.3.2",
+    "name": "Zolpidem",
+    "level_of_healthcare": "P,S,T",
+    "section": "23",
+    "section_title": "Medicines used in treatment of Psychiatric Disorders"
+  },
+  {
+    "code": "23.4.1",
+    "name": "Clomipramine",
+    "level_of_healthcare": "P,S,T",
+    "section": "23",
+    "section_title": "Medicines used in treatment of Psychiatric Disorders"
+  },
+  {
+    "code": "23.4.2",
+    "name": "Fluoxetine",
+    "level_of_healthcare": "S,T",
+    "section": "23",
+    "section_title": "Medicines used in treatment of Psychiatric Disorders"
+  },
+  {
+    "code": "23.5.1",
+    "name": "Buprenorphine",
+    "level_of_healthcare": "P,S,T",
+    "section": "24",
+    "section_title": "Medicines acting on the Respiratory tract"
+  },
+  {
+    "code": "23.5.2",
+    "name": "Buprenorphine (A) + Naloxone (B)",
+    "level_of_healthcare": "P,S,T",
+    "section": "24",
+    "section_title": "Medicines acting on the Respiratory tract"
+  },
+  {
+    "code": "23.5.3",
+    "name": "Nicotine (for nicotine replacement therapy)",
+    "level_of_healthcare": "P,S,T",
+    "section": "24",
+    "section_title": "Medicines acting on the Respiratory tract"
+  },
+  {
+    "code": "24.1.1",
+    "name": "Budesonide",
+    "level_of_healthcare": "P,S,T",
+    "section": "24",
+    "section_title": "Medicines acting on the Respiratory tract"
+  },
+  {
+    "code": "24.1.2",
+    "name": "Budesonide (A) + Formoterol (B)",
+    "level_of_healthcare": "P,S,T",
+    "section": "24",
+    "section_title": "Medicines acting on the Respiratory tract"
+  },
+  {
+    "code": "24.1.3",
+    "name": "Hydrocortisone",
+    "level_of_healthcare": "P,S,T",
+    "section": "24",
+    "section_title": "Medicines acting on the Respiratory tract"
+  },
+  {
+    "code": "24.1.4",
+    "name": "Ipratropium",
+    "level_of_healthcare": "P,S,T",
+    "section": "24",
+    "section_title": "Medicines acting on the Respiratory tract"
+  },
+  {
+    "code": "24.1.5",
+    "name": "Montelukast",
+    "level_of_healthcare": "S,T",
+    "section": "24",
+    "section_title": "Medicines acting on the Respiratory tract"
+  },
+  {
+    "code": "24.1.6",
+    "name": "Salbutamol",
+    "level_of_healthcare": "P,S,T",
+    "section": "24",
+    "section_title": "Medicines acting on the Respiratory tract"
+  },
+  {
+    "code": "24.1.7",
+    "name": "Tiotropium",
+    "level_of_healthcare": "P,S,T",
+    "section": "25",
+    "section_title": "Solutions correcting Water, Electrolyte disturbances"
+  },
+  {
+    "code": "25.1.1",
+    "name": "Glucose",
+    "level_of_healthcare": "P,S,T",
+    "section": "25",
+    "section_title": "Solutions correcting Water, Electrolyte disturbances"
+  },
+  {
+    "code": "25.1.2",
+    "name": "Glucose(A) + Sodium chloride (B)",
+    "level_of_healthcare": "P,S,T",
+    "section": "25",
+    "section_title": "Solutions correcting Water, Electrolyte disturbances"
+  },
+  {
+    "code": "25.1.3",
+    "name": "Oral rehydration salts",
+    "level_of_healthcare": "P,S,T",
+    "section": "25",
+    "section_title": "Solutions correcting Water, Electrolyte disturbances"
+  },
+  {
+    "code": "25.1.4",
+    "name": "Potassium chloride",
+    "level_of_healthcare": "P,S,T",
+    "section": "25",
+    "section_title": "Solutions correcting Water, Electrolyte disturbances"
+  },
+  {
+    "code": "25.1.5",
+    "name": "Ringer lactate",
+    "level_of_healthcare": "P,S,T",
+    "section": "26",
+    "section_title": "Vitamins and Minerals"
+  },
+  {
+    "code": "25.1.6",
+    "name": "Sodium bicarbonate",
+    "level_of_healthcare": "P,S,T",
+    "section": "26",
+    "section_title": "Vitamins and Minerals"
+  },
+  {
+    "code": "25.1.7",
+    "name": "Sodium chloride",
+    "level_of_healthcare": "P,S,T",
+    "section": "26",
+    "section_title": "Vitamins and Minerals"
+  },
+  {
+    "code": "25.2.1",
+    "name": "Water for Injection",
+    "level_of_healthcare": "P,S,T",
+    "section": "26",
+    "section_title": "Vitamins and Minerals"
+  },
+  {
+    "code": "6.1.5",
+    "name": "Ivermectin",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective medicines"
+  },
+  {
+    "code": "6.4.7",
+    "name": "Delamanid",
+    "level_of_healthcare": "T",
+    "section": "6",
+    "section_title": "Anti-infective medicines"
+  },
+  {
+    "code": "6.7.1.5",
+    "name": "Tenofovir (A) + Lamivudine (B) + Dolutegravir (C)",
+    "level_of_healthcare": "P,S,T",
+    "section": "6",
+    "section_title": "Anti-infective medicines"
+  },
+  {
+    "code": "7.1.26",
+    "name": "Irinotecan HCI Trihydrate",
+    "level_of_healthcare": "T",
+    "section": "8",
+    "section_title": "Anti-cancer agents including  Immunosuppressives and Medicines used in"
+  },
+  {
+    "code": "18.2.3",
+    "name": "Ormeloxifene",
+    "level_of_healthcare": "P,S,T",
+    "section": "21",
+    "section_title": "Hormones, other Endocrine Medicines and Contraceptives"
+  },
+  {
+    "code": "19.4.8",
+    "name": "Rotavirus vaccine",
+    "level_of_healthcare": "P,S,T",
+    "section": "23",
+    "section_title": "Muscle relaxants and cholinesterase inhibitors"
+  },
+  {
+    "code": "24.1.8",
+    "name": "Montelukast",
+    "level_of_healthcare": "S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "1.2.4",
+    "name": "Prilocaine (A) + Lignocaine (B)",
+    "level_of_healthcare": "T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "2.4.3",
+    "name": "Leflunomide",
+    "level_of_healthcare": "S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "4.2.4",
+    "name": "Dimercaprol",
+    "level_of_healthcare": "S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "6.2.4.1",
+    "name": "Capreomycin",
+    "level_of_healthcare": "P,S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "6.2.4.6",
+    "name": "Kanamycin",
+    "level_of_healthcare": "P,S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "6.2.4.12",
+    "name": "Rifabutin",
+    "level_of_healthcare": "S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "6.4.2.1",
+    "name": "Ganciclovir",
+    "level_of_healthcare": "S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "6.4.4.2",
+    "name": "Pegylated interferon alfa 2a",
+    "level_of_healthcare": "S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "6.5.1.1",
+    "name": "Diloxanide furoate",
+    "level_of_healthcare": "P,S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "6.5.4.2",
+    "name": "Pentamidine",
+    "level_of_healthcare": "S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "8.1.30",
+    "name": "Procarbazine",
+    "level_of_healthcare": "T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "12.3.6",
+    "name": "Methyldopa",
+    "level_of_healthcare": "P,S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "12.3.2",
+    "name": "Atenolol",
+    "level_of_healthcare": "P,S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "12.5.2",
+    "name": "Alteplase",
+    "level_of_healthcare": "T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "14.6.2",
+    "name": "White Petrolatum",
+    "level_of_healthcare": "P,S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "17.1.1",
+    "name": "Cetrimide",
+    "level_of_healthcare": "P,S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "17.2.1",
+    "name": "Bleaching powder",
+    "level_of_healthcare": "P,S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "20.1.4",
+    "name": "Sucralfate",
+    "level_of_healthcare": "S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "20.1.3",
+    "name": "Ranitidine",
+    "level_of_healthcare": "P,S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "21.2.1.2",
+    "name": "Ethinylestradiol (A) + Norethisterone (B)",
+    "level_of_healthcare": "P,S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "21.3.1",
+    "name": "Ethinylestradiol",
+    "level_of_healthcare": "P,S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  },
+  {
+    "code": "25.1.3",
+    "name": "Erythromycin",
+    "level_of_healthcare": "P,S,T",
+    "section": "30",
+    "section_title": "Vitamins and minerals"
+  }
+]
