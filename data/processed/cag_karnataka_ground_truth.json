@@ -3,6 +3,20 @@
   "source_url": "https://cag.gov.in/uploads/download_audit_report/2024/Report-No.-8,-2024,-Karnataka-06a2bce5ec213d0.88550062.pdf",
   "downloaded_and_verified": true,
   "note": "Independently downloaded and re-parsed from the raw PDF (208 pages) in this repo -- every figure below was located and extracted directly from the source text, not paraphrased from a secondary article. An earlier attempt grabbed a similarly-titled CAG 'Chapter IV' PDF that turned out to be Andhra Pradesh's, not Karnataka's -- that file is kept at data/raw/cag_andhra_pradesh_2024_MISLABELED.pdf as a record of the correction, and is not used anywhere in this pipeline.",
+  "ksmscl_real_procurement_cycle_timeline": {
+    "description": "Table 4.2: real dates of each stage of KSMSCL's annual procurement cycle (State Therapeutic Committee meeting -> indent submission -> Need Assessment Committee meeting -> government approval -> tender -> purchase order issuance), 2016-17 to 2021-22. No fixed calendar schedule existed for this cycle (the audit's own finding), which is WHY real cycle lengths vary so widely -- this is the actual, documented mechanism a real deployment's redistribution/reorder timing would need to model, not an assumption we invented.",
+    "page_citation": "Page 82",
+    "by_year": {
+      "2016-17": {"committee_meeting": "2016-04-18", "purchase_order_issued": "2017-04-10"},
+      "2017-18": {"committee_meeting": "2017-04-11", "purchase_order_issued_range": ["2018-06-11", "2018-08-27"]},
+      "2018-19": {"committee_meeting": "2018-05-08", "purchase_order_issued_range": ["2019-07-16", "2019-08-16"]},
+      "2019-20": {"committee_meeting": "2019-03-18", "purchase_order_issued": "2020-06-05"},
+      "2020-21": {"committee_meeting": "2020-04-28", "purchase_order_issued": "2021-11-24"},
+      "2021-22": {"committee_meeting": "2021-06-23", "purchase_order_issued": "not approved as of audit date"}
+    },
+    "real_full_cycle_length_days": [357, 464, 450, 445, 575],
+    "note": "Full cycle length = committee-meeting date to purchase-order-issuance date, in real calendar days, for the 5 years where a PO date exists. Used directly (not a made-up range) as the empirical distribution for how long a procurement disruption realistically lasts once triggered -- see scripts/generate_synthetic_stock.py."
+  },
   "ksmscl_essential_drug_procurement_rate": {
     "description": "Table 4.3: percentage of KSMSCL-approved essential drugs actually procured, by year",
     "page_citation": "Page 82",

@@ -55,6 +55,11 @@ export default function LoginPage() {
           <h1 className="text-2xl font-semibold mt-2 text-[#12292B]">
             Predicting a medicine shortage before it becomes regional
           </h1>
+          <p className="text-sm text-[#4C6567] mt-2 max-w-md">
+            A decision-support layer over Karnataka's own KSMSCL / e-Aushadhi
+            procurement system — not a replacement for it. Every
+            recommendation here is reviewed and approved by a person.
+          </p>
         </div>
 
         <div className="bg-white border border-[#D5DEDC] rounded-xl shadow-sm p-6 mb-6">

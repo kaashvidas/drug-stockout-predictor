@@ -93,6 +93,15 @@ def load_real_stockout_distribution() -> np.ndarray:
     return np.array(vals, dtype=float) / 100.0
 
 
+def load_real_procurement_cycle_days() -> np.ndarray:
+    """Real KSMSCL committee-meeting-to-purchase-order cycle lengths, in
+    days, 2016-17 to 2020-21 (Table 4.2) -- the actual, documented, no-fixed-
+    calendar bureaucratic lead time this project models a bulk-restock delay
+    on, instead of an invented window."""
+    cag = json.loads(CAG_PATH.read_text(encoding="utf-8"))
+    return np.array(cag["ksmscl_real_procurement_cycle_timeline"]["real_full_cycle_length_days"], dtype=float)
+
+
 def drug_category(drug: str) -> str:
     for cat, names in DRUG_BASKET.items():
         if drug in names:
@@ -125,6 +134,7 @@ def simulate_facility_drug(
     drug: str,
     weather_df: pd.DataFrame,
     stockout_rate_sample: float,
+    procurement_cycle_days: np.ndarray,
 ) -> pd.DataFrame:
     dates = pd.date_range(START_DATE, END_DATE, freq="D")
     n = len(dates)
@@ -155,9 +165,18 @@ def simulate_facility_drug(
     stock = np.zeros(n)
     stock[0] = base_daily_consumption * target_days_of_cover
 
+    # Facility-level local stock review is monthly-ish; the BIG bulk restock
+    # a review can trigger is gated by KSMSCL's real, documented, no-fixed-
+    # calendar procurement cycle (357-575 real days, Table 4.2) once a
+    # disruption fires -- not an invented 15-45 day window. During that real
+    # wait, the audit's own finding that "institutions had to locally
+    # procure drugs at higher rates" is modeled as smaller interim trickle
+    # restocks (partial quantity, more frequent) rather than nothing at all.
     disruption_prob_per_review = min(0.9, stockout_rate_sample * 1.8)
-    review_interval = 20
+    review_interval = 30
+    local_purchase_interval = 45
     supply_shortfall_active_until = -1
+    in_disruption = False
 
     for i in range(1, n):
         stock[i] = stock[i - 1] - consumption[i]
@@ -167,12 +186,19 @@ def simulate_facility_drug(
             days_cover = stock[i] / avg_c if avg_c > 0 else 999
             needs_reorder = days_cover < target_days_of_cover * 0.6
             if needs_reorder:
-                disrupted = RNG.uniform(0, 1) < disruption_prob_per_review
-                if disrupted:
-                    supply_shortfall_active_until = i + int(RNG.uniform(15, 45))
+                if not in_disruption:
+                    disrupted = RNG.uniform(0, 1) < disruption_prob_per_review
+                    if disrupted:
+                        cycle_days = int(RNG.choice(procurement_cycle_days))
+                        supply_shortfall_active_until = i + cycle_days
+                        in_disruption = True
                 if i >= supply_shortfall_active_until:
                     qty = avg_c * target_days_of_cover
                     stock[i] += qty
+                    in_disruption = False
+                elif in_disruption and i % local_purchase_interval == 0:
+                    # partial, higher-cost local procurement (real audit finding)
+                    stock[i] += avg_c * target_days_of_cover * 0.3
 
         stock[i] = max(0.0, stock[i])
 
@@ -208,15 +234,19 @@ def main():
     facilities = pd.read_csv(FACILITIES_PATH)
     weather = pd.read_csv(WEATHER_PATH, parse_dates=["date"])
     stockout_dist = load_real_stockout_distribution()
+    procurement_cycle_days = load_real_procurement_cycle_days()
     print(f"Real CAG Karnataka empirical stockout-rate distribution: n={len(stockout_dist)}, "
           f"mean={stockout_dist.mean():.2%}, range=[{stockout_dist.min():.0%}, {stockout_dist.max():.0%}]")
+    print(f"Real KSMSCL procurement cycle length (days): {sorted(procurement_cycle_days.astype(int))}")
 
     all_frames = []
     for _, fac in facilities.iterrows():
         fac_weather = weather[(weather["district"] == fac["district"])][["date", "rain_mm", "temp_max_c"]]
         for drug in ALL_DRUGS:
             stockout_sample = sample_stockout_rate(fac["district"], stockout_dist)
-            df = simulate_facility_drug(fac["facility_id"], fac["facility_type"], drug, fac_weather, stockout_sample)
+            df = simulate_facility_drug(
+                fac["facility_id"], fac["facility_type"], drug, fac_weather, stockout_sample, procurement_cycle_days
+            )
             df["district"] = fac["district"]
             df["state"] = fac["state"]
             all_frames.append(df)

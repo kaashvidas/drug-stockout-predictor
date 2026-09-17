@@ -11,6 +11,9 @@ import StockReportForm from "../components/StockReportForm";
 import AuditLogPanel from "../components/AuditLogPanel";
 import SearchBar from "../components/SearchBar";
 import RankedBarChart from "../components/RankedBarChart";
+import AvailabilityExplorer from "../components/AvailabilityExplorer";
+import PendingTransferRequests from "../components/PendingTransferRequests";
+import MyStockHistory from "../components/MyStockHistory";
 import type { DrugRanking, FacilityRanking, HeatmapRow, RiskAlert } from "../types";
 
 export default function Dashboard() {
@@ -102,14 +105,17 @@ export default function Dashboard() {
           </div>
         )}
 
+        {canApprove && <AvailabilityExplorer alerts={alerts} />}
+
         <SearchBar value={search} onChange={setSearch} />
 
         <div className={`grid gap-6 ${isFacilityRole ? "grid-cols-1" : "grid-cols-3"}`}>
           <div className={isFacilityRole ? "" : "col-span-1"}>
             <AlertList alerts={filteredAlerts} onSelect={setSelected} selected={selected} maxRows={isFacilityRole ? 10 : undefined} />
             {isFacilityRole && auth.scope && (
-              <div className="mt-6">
+              <div className="mt-6 space-y-6">
                 <StockReportForm facilityId={auth.scope} />
+                <MyStockHistory facilityId={auth.scope} />
               </div>
             )}
           </div>
@@ -121,6 +127,7 @@ export default function Dashboard() {
           <div className={`space-y-6 ${isFacilityRole ? "" : "col-span-1"}`}>
             <CascadePanel alert={selected} />
             <RedistributionQueue alert={selected} />
+            {canApprove && <PendingTransferRequests />}
             {(isSystemicRole || canApprove) && <AuditLogPanel />}
           </div>
         </div>
