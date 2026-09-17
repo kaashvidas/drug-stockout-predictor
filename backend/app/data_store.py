@@ -15,6 +15,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parent.parent.parent
 PROCESSED = ROOT / "data" / "processed"
 SYNTHETIC = ROOT / "data" / "synthetic"
+RAW = ROOT / "data" / "raw"
 
 
 @lru_cache
@@ -44,7 +45,16 @@ def load_nlem_catalog() -> list[dict]:
 
 @lru_cache
 def load_cag_ground_truth() -> dict:
-    return json.loads((PROCESSED / "cag_ground_truth.json").read_text(encoding="utf-8"))
+    return json.loads((PROCESSED / "cag_karnataka_ground_truth.json").read_text(encoding="utf-8"))
+
+
+@lru_cache
+def load_latest_weather_by_district() -> dict:
+    """Most recent real Open-Meteo observation per district -- used to derate
+    redistribution route feasibility under real heavy rain (ml/matching.py)."""
+    df = pd.read_csv(RAW / "weather_daily.csv", parse_dates=["date"])
+    latest = df.sort_values("date").groupby("district").tail(1)
+    return latest.set_index("district")[["rain_mm", "temp_max_c"]].to_dict(orient="index")
 
 
 @lru_cache
@@ -73,6 +83,7 @@ DRUG_CATEGORY_TO_PROGRAM = {
     "anti_tb": "Central TB Division",
     "envenomation": "NVBDCP (vector-borne & envenomation)",
     "maternal": "Reproductive & Child Health Programme",
+    "thalassemia_chelation": "Dept. of Health & Family Welfare (Karnataka) -- Hemoglobinopathy Programme",
 }
 
 # Mirrors scripts/generate_synthetic_stock.py DRUG_BASKET (kept in sync there;
@@ -87,6 +98,8 @@ DRUG_TO_CATEGORY = {
     "Oxytocin": "maternal",
     "Snake Venom Antiserum": "envenomation",
     "Insulin (Soluble)": "diabetes",
+    "Deferoxamine": "thalassemia_chelation", "Deferasirox": "thalassemia_chelation",
+    "Hydroxyurea": "thalassemia_chelation",
 }
 
 

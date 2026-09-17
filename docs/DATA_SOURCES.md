@@ -8,54 +8,91 @@ used anywhere in the pipeline, it says where it actually came from, whether
 it was fetched live in this repo, and — for the one tier that has to be
 generated — exactly which real numbers constrain it.
 
+**Scope note:** the platform originally covered 180 facilities scattered
+across 6 districts in 6 different states, anchored to a Chhattisgarh/UP TB
+stockout case study. It was rebuilt to cover **all 31 real districts of a
+single state (Karnataka)**, anchored to a different real, verified case
+study (a persistent thalassemia chelation-drug shortage) — both so the
+dataset reads as one coherent state health system rather than a scattered
+sample, and so the flagship case study isn't the only story the system can
+tell (see the "Scope note" in `README.md`).
+
 ## Tier 1 — Real, fetched live by scripts in `scripts/`, unmodified
 
 | Dataset | Script | Output | Real source |
 |---|---|---|---|
 | NLEM 2022 drug catalog (453 real medicines, codes, levels of care) | `scripts/parse_nlem.py` | `data/processed/nlem_catalog.json` | CDSCO official PDF, downloaded byte-for-byte: https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2018/UploadConsumer/nlem2022.pdf |
-| Healthcare facility registry (180 real, named, geolocated facilities across 6 real districts) | `scripts/fetch_facilities_osm.py`, `scripts/build_facility_registry.py` | `data/processed/facilities.csv` | OpenStreetMap Overpass API (live query, real hospital/clinic/pharmacy nodes) |
+| Karnataka's 31 real district HQ coordinates | `scripts/geocode_karnataka_districts.py` | `data/raw/karnataka_district_centroids.json` | OSM Nominatim (live geocoding, free, keyless) |
+| Government-facility registry, statewide (all 31 districts) | `scripts/fetch_karnataka_facilities.py`, `scripts/build_karnataka_facility_registry.py` | `data/processed/facilities.csv` | OpenStreetMap Overpass API (live query, government-name-filtered — see note below) |
 | District daily weather, 2023-01-01 to 2024-12-31 (temp, precipitation, rain) | `scripts/fetch_weather.py` | `data/raw/weather_daily.csv` | Open-Meteo Archive API (real historical observations) |
 | 16-day weather forecast per district | `scripts/fetch_weather.py` | `data/raw/weather_forecast_16day.csv` | Open-Meteo Forecast API (live) |
-| Real road-network travel times between every facility pair sharing a district | `scripts/fetch_travel_times.py` | `data/processed/travel_times.csv` (5,220 real pairs) | OSRM public routing API (router.project-osrm.org), real road network |
-| CAG audit PDFs (source documents, kept for citation) | manual `curl` | `data/raw/cag_health_infra_2024.pdf`, `data/raw/cag_procurement_2022.pdf` | cag.gov.in, official performance audit reports |
+| Real road-network travel times between every facility pair sharing a district | `scripts/fetch_travel_times.py` | `data/processed/travel_times.csv` | OSRM public routing API (router.project-osrm.org), real road network |
+| CAG Karnataka audit PDF (source document, kept for citation) | manual `curl` | `data/raw/cag_karnataka_2024.pdf` | cag.gov.in, Report No. 08 of 2024, Government of Karnataka |
 
-Districts chosen deliberately to match the build guide's own cited case
-studies plus each state procurement-corporation model it names: **Sarguja
-(Chhattisgarh)**, **Pilibhit (Uttar Pradesh)** — the two real 2023-24 TB
-stockout sites — plus **Tiruvallur (Tamil Nadu, TNMSC)**, **Ernakulam
-(Kerala, KMSCL)**, **Jaipur (Rajasthan, RMSC)**, and **Nagpur (Maharashtra)**
-for cross-state cascade diversity.
+**The government-facility filter, and why it exists:** an early, unfiltered
+Overpass pull for Bengaluru Urban district alone returned 3,144 "healthcare"
+nodes — 97% of them private clinics, pharmacies, dentists, and diagnostic
+labs, not the government District/Taluk Hospital, CHC, and PHC network that
+KSMSCL supplies and the CAG audit examines. `scripts/fetch_karnataka_facilities.py`
+filters to facilities that are either OSM-tagged `operator:type=government`
+or name-pattern-matched as government (`"Government Hospital"`, `"PHC"`,
+`"Taluk Hospital"`, `"CHC"`, etc. — India's public facilities reliably
+self-identify by name). This cut Bengaluru Urban to 63 real government
+facilities and kept the statewide total in the ~800-1,200 range instead of
+tens of thousands, while making the dataset actually representative of the
+public essential-drug supply chain this whole platform models.
 
 ## Tier 2 — Real, published ground truth used to calibrate and validate
 
-Extracted and verified directly from the downloaded CAG PDF (not paraphrased
-from the build guide — independently re-parsed from the source document):
+Extracted and independently verified directly from the downloaded, real
+Karnataka-specific CAG PDF (**Report No. 08 of 2024, Government of
+Karnataka, on Public Health Infrastructure and Management of Health
+Services**, https://cag.gov.in/uploads/download_audit_report/2024/Report-No.-8,-2024,-Karnataka-06a2bce5ec213d0.88550062.pdf
+— 208 pages, downloaded and re-parsed in this repo, not paraphrased from a
+secondary article):
 
-- **Table 4.3** (CAG Odisha public health infrastructure audit, page 81):
-  real per-facility stock-out percentages for 9 District/Medical College
-  Hospitals across 6 sampled months (2016-2021), ranging 0-68%.
-- **CHC stock-out range**: 16-72% of essential drugs unavailable across 13
-  test-checked CHCs; one CHC (Kosagumuda) at 2%.
-- **Critical-drug stockout duration**: 3-59 critical drugs unavailable for
-  3-410 days across audited hospitals, 2018-22.
+- **Table 4.3** (page 82): KSMSCL's own year-wise essential-drug
+  procurement rate — 66.89% (2017-18), 40.52% (2018-19), 43.53% (2019-20),
+  31.27% (2020-21).
+- **Table 4.5** (page 83): real supply-vs-requisition percentages in the
+  audit's own 5 test-checked districts — Ballari 34.65%, Bengaluru Urban
+  32.95%, Dharwad 32.10%, Kolar 33.07%, Mysuru 30.84%.
+- **Essential-drug availability by facility tier** (page 85, snapshot date
+  30 June 2022): District Hospitals had fewer than 50 of 128 required
+  drugs (61% shortage); Taluk Hospitals ≤35 of 81 (57%); CHCs ≤25 of 64
+  (61%).
+- **OPD patient survey** (page 85, n=1,260): only 70% (tertiary), 91%
+  (secondary), 92% (primary) of outpatients actually received their
+  prescribed drug at the counter.
 
-All saved with page citations in `data/processed/cag_ground_truth.json`.
+All saved with page citations in `data/processed/cag_karnataka_ground_truth.json`.
 
-The build guide additionally cites a national **11-23% availability band**
-and **103/272, 39/149 EDL-drugs-missing** figures from a related CAG
-compendium report. That specific national summary table was not present in
-the single chapter PDF we were able to download and independently re-parse,
-so those two figures are carried as **guide-cited, not independently
-re-verified by us** — flagged as such in `cag_ground_truth.json` — while the
-Odisha per-facility numbers above ARE independently verified against the raw
-PDF text in this repo. They are directionally consistent (Odisha's own
-facility-level range spans 0-72% stockout).
+**A correction worth recording:** the first CAG PDF fetched for this
+project's Karnataka pivot was actually Andhra Pradesh's, not Karnataka's —
+both reports share the generic filename pattern `Chapter-IV---Availability-of-Drugs...`.
+That file is kept at `data/raw/cag_andhra_pradesh_2024_MISLABELED.pdf` as a
+record of the mistake and is not used anywhere in this pipeline; the real
+Karnataka-specific report (Report No. 08 of 2024) was located and verified
+separately.
 
-TB case-study checkpoints (Pilibhit ~1,200 patients incl. 124 MDR-TB; Sarguja
-13 days-of-cover; 18 March 2024 Central TB Division admission) are carried
-as guide-cited, sourced to IndiaSpend and Scroll.in reporting named in the
-guide — these are specific, named, dated, publicly reported facts, not
-recomputed by us from a raw dataset.
+**The flagship case study — a real, multi-year, legally-documented
+persistent shortage** (not the single-admission-date crisis pattern the
+project used previously):
+
+- **Since 2020**: Desferal (Deferoxamine), the standard thalassemia
+  iron-chelation injection, disappeared from Karnataka government hospital
+  shelves, per both sources below.
+- **23 September 2021**: the Karnataka High Court ordered notice to the
+  state government on a PIL filed by the **Thalassemia and Sickle Cell
+  Society of Bangalore** and patient **Namitha A Kumar**, seeking restored
+  free supply. Real petitioners, real bench (Acting Chief Justice Satish
+  Chandra Sharma), real cited figure of ~17,000 affected patients
+  statewide. Source: Deccan Herald, https://www.deccanherald.com/india/karnataka/plea-in-karnataka-hc-seeks-regular-supply-of-life-saving-drug-for-thalassemia-patients-1033539.html
+- **2 October 2023**: follow-up reporting confirms the drug is still
+  missing; KSMSCL's own procurement tender drew no bidders, twice. Source:
+  Deccan Herald, https://www.deccanherald.com/india/karnataka/bengaluru/lack-of-vital-drug-in-karnatakas-govt-hospitals-hits-thalassemia-patients-2708716
+
+Full timeline with every figure in `data/processed/cag_karnataka_ground_truth.json`.
 
 ## Tier 1 sources named in the guide that we could NOT fetch automatically
 
@@ -65,13 +102,13 @@ Documented honestly rather than silently substituted:
   real, but data.gov.in's API requires a personally-registered API key (the
   public demo key returns `"Key not authorised"` for this resource — we
   verified this directly). **This is a manual step the user can complete**
-  by registering a free key at https://data.gov.in and dropping it into
-  `scripts/fetch_nppa.py` (stubbed, not yet run). Until then, no NPPA-derived
-  numbers appear anywhere in this codebase.
+  by registering a free key at https://data.gov.in. Until then, no
+  NPPA-derived numbers appear anywhere in this codebase.
 - **HMIS facility registry** (2.17 lakh+ facilities): published as aggregate
   reports/portal access, not a flat downloadable file. We substituted real,
-  live-queried OpenStreetMap facility data for the same real districts,
-  documented above — real named, geolocated facilities, not HMIS's own rows.
+  live-queried, government-filtered OpenStreetMap facility data for all 31
+  Karnataka districts, documented above — real named, geolocated
+  facilities, not HMIS's own rows.
 - **IDSP weekly outbreak bulletins** and **Nikshay TB dashboards**: both are
   JS-rendered government dashboards without a public flat-file export we
   could reach from a script in this session. The leading-indicator fusion
@@ -84,8 +121,22 @@ Documented honestly rather than silently substituted:
 No public source in India publishes this. Per the build guide's own
 Section 04 and the user's explicit sign-off, `scripts/generate_synthetic_stock.py`
 generates it, but is **constrained to pass exactly through the real
-checkpoints above**: the national/Odisha stockout percentage bands, the
-Sarguja 13-days-of-cover point, and the Pilibhit patient-exposure scale.
+checkpoints above**:
+
+- Each facility-drug pair's long-run stockout-rate parameter is sampled
+  from the empirical distribution of the real Karnataka CAG percentages
+  above — facilities in the audit's own 5 test-checked districts are
+  biased toward THAT district's own real reported shortfall rate rather
+  than a statewide average.
+- **Deferoxamine, Deferasirox, and Deferiprone** (the three real
+  iron-chelation drugs named across the court/news sources — none of them
+  on the NLEM 2022 list, which is itself part of the real story) are
+  hard-constrained to near-zero stock for the entire 2023-2024 window,
+  reflecting the real, dated, persistent (not resolved-crisis) shortage.
+  **Hydroxyurea**, a fourth real thalassemia-adjacent drug that IS on
+  NLEM 2022, is deliberately NOT forced into the shortage pattern — it
+  follows the general stochastic model like every other basket drug.
+
 Every value the UI derives from this layer is labeled
 **"reconstructed — interpolated between verified checkpoints"** in the
 frontend itself (see `frontend/src/components/ReconstructedBadge.tsx`) —
@@ -98,10 +149,14 @@ constraint equations.
   weather** feeding every model are 100% real and independently fetched by
   the scripts in this repo — rerun them any time to refresh.
 - The **risk-classification labels and backtest targets** are anchored to
-  the real CAG Table 4.3 percentages and the real Sarguja/Pilibhit dates —
-  the validation section of the guide (Section 11) asks for exactly this:
-  a defensible "flagged N weeks before the real, documented response" claim,
-  not an invented accuracy number.
+  the real Karnataka CAG percentages and the real HC PIL / Deccan Herald
+  dates — the validation section of the guide (Section 11) asks for
+  exactly this: a defensible claim tied to real dates, not an invented
+  accuracy number. Because this case study is a *persistent* shortage
+  rather than a single-admission-date crisis, the corresponding backtest
+  (`ml/train_all.py::run_validation_backtest`) checks that the model
+  flags it as critical *consistently*, not just *early* — a different
+  but equally real shape of claim.
 - The **daily stock-level time series** that STL/Prophet decompose is the
   one generated layer, and it is never used as if it were itself a ground
   truth measurement — it is training data for demonstrating the pipeline

@@ -1,0 +1,91 @@
+{
+  "source": "CAG Report No. 08 of 2024 (Performance Audit - Civil), Government of Karnataka, on Public Health Infrastructure and Management of Health Services, Chapter 4",
+  "source_url": "https://cag.gov.in/uploads/download_audit_report/2024/Report-No.-8,-2024,-Karnataka-06a2bce5ec213d0.88550062.pdf",
+  "downloaded_and_verified": true,
+  "note": "Independently downloaded and re-parsed from the raw PDF (208 pages) in this repo -- every figure below was located and extracted directly from the source text, not paraphrased from a secondary article. An earlier attempt grabbed a similarly-titled CAG 'Chapter IV' PDF that turned out to be Andhra Pradesh's, not Karnataka's -- that file is kept at data/raw/cag_andhra_pradesh_2024_MISLABELED.pdf as a record of the correction, and is not used anywhere in this pipeline.",
+  "ksmscl_essential_drug_procurement_rate": {
+    "description": "Table 4.3: percentage of KSMSCL-approved essential drugs actually procured, by year",
+    "page_citation": "Page 82",
+    "by_year": {
+      "2017-18": 66.89,
+      "2018-19": 40.52,
+      "2019-20": 43.53,
+      "2020-21": 31.27
+    }
+  },
+  "district_supply_shortfall_pct": {
+    "description": "Table 4.5: quantity of drugs supplied vs. requisitioned, in the 5 real test-checked districts, 2016-22 (shortfall_pct = 100 - supply_pct)",
+    "page_citation": "Page 83",
+    "by_district": {
+      "Ballari": {"supply_pct": 34.65, "shortfall_pct": 65.35},
+      "Bengaluru Urban": {"supply_pct": 32.95, "shortfall_pct": 67.05},
+      "Dharwad": {"supply_pct": 32.10, "shortfall_pct": 67.90},
+      "Kolar": {"supply_pct": 33.07, "shortfall_pct": 66.93},
+      "Mysuru": {"supply_pct": 30.84, "shortfall_pct": 69.16}
+    }
+  },
+  "essential_drug_availability_shortage_by_facility_tier": {
+    "description": "As of the audit snapshot date (30 June 2022): all test-checked District Hospitals (DH) had fewer than 50 of the 128 required Essential Drug List (EDL) items; Taluk Hospitals (TH) had at most 35 of 81; CHCs had at most 25 of 64.",
+    "page_citation": "Page 85",
+    "snapshot_date": "2022-06-30",
+    "by_tier": {
+      "District Hospital": {"required": 128, "max_available": 50, "shortage_pct": 61},
+      "Taluk Hospital": {"required": 81, "max_available": 35, "shortage_pct": 57},
+      "CHC": {"required": 64, "max_available": 25, "shortage_pct": 61}
+    }
+  },
+  "opd_patient_survey": {
+    "description": "Survey of 1,260 outpatients: percentage who actually received their prescribed drug at the OPD counter, by facility tier",
+    "page_citation": "Page 85",
+    "n_surveyed": 1260,
+    "pct_received_drug_by_tier": {
+      "tertiary": 70,
+      "secondary": 91,
+      "primary": 92
+    }
+  },
+  "thalassemia_deferoxamine_shortage": {
+    "description": "Desferal (Deferoxamine) injection, the standard iron-chelation drug for thalassemia patients, has been absent from Karnataka government hospital shelves since the 2020 COVID-19 outbreak. This is a persistent, multi-year, legally-contested shortage -- a different failure pattern from a crisis-and-recovery arc, documented across three real, dated sources below. Deferoxamine is NOT on the NLEM 2022 essential-drug list (verified: absent from data/processed/nlem_catalog.json) -- its absence from the essential-drugs list is arguably why it fell out of the state's own procurement priority. Included in this project because of these real, dated, named sources, not because it is one of our NLEM-sourced Tier-1 drugs.",
+    "shortage_start_year": 2020,
+    "timeline": [
+      {
+        "date": "2021-09-23",
+        "event": "Karnataka High Court ordered notice to the state government on a PIL seeking restoration of free chelation-drug supply.",
+        "source": "Deccan Herald (DHNS), 'Plea in Karnataka HC seeks regular supply of life-saving drug for Thalassemia patients'",
+        "source_url": "https://www.deccanherald.com/india/karnataka/plea-in-karnataka-hc-seeks-regular-supply-of-life-saving-drug-for-thalassemia-patients-1033539.html",
+        "petitioners": ["Thalassemia and Sickle Cell Society of Bangalore", "Namitha A Kumar (thalassemia patient)"],
+        "bench": "Division bench headed by Acting Chief Justice Satish Chandra Sharma",
+        "affected_patients_statewide_per_petition": 17000,
+        "open_market_cost_inr_per_month_2021": {"min": 1000, "max": 1500}
+      },
+      {
+        "date": "2023-10-02",
+        "event": "Follow-up reporting: drug still missing 3+ years on; KSMSCL floated a procurement tender that drew no bidders, twice.",
+        "source": "Deccan Herald (DHNS), 'Lack of vital drug in Karnataka's govt hospitals hits thalassemia patients'",
+        "source_url": "https://www.deccanherald.com/india/karnataka/bengaluru/lack-of-vital-drug-in-karnatakas-govt-hospitals-hits-thalassemia-patients-2708716",
+        "affected_patients_statewide": 17000,
+        "procuring_body": "Karnataka State Medical Supplies Corporation Limited (KSMSCL)",
+        "sole_producer_of_desferal": "Novartis",
+        "open_market_cost_inr_per_month_2023": {"min": 10000, "max": 20000}
+      }
+    ],
+    "related_real_drugs": [
+      {
+        "name": "Deferasirox",
+        "note": "Oral iron-chelation alternative; generic government-stocked formulation reported to cause side effects per patient accounts (2023 article). Not on NLEM 2022.",
+        "on_nlem": false
+      },
+      {
+        "name": "Deferiprone",
+        "brand_named_in_court_reporting": "Kelfer",
+        "note": "Third real iron-chelation drug, named directly in the 2021 Karnataka HC article's keywords alongside Desferal/chelation. Not on NLEM 2022.",
+        "on_nlem": false
+      }
+    ],
+    "nlem_adjacent_real_drug": {
+      "name": "Hydroxyurea",
+      "note": "Also used in some thalassemia/hemoglobinopathy management to reduce transfusion needs. IS on the real NLEM 2022 list (verified in data/processed/nlem_catalog.json).",
+      "on_nlem": true
+    }
+  }
+}

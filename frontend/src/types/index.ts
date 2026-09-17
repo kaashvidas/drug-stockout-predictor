@@ -18,6 +18,8 @@ export interface DemoAccount {
 
 export interface RiskAlert {
   facility_id: string;
+  facility_name?: string;
+  facility_type?: string;
   drug: string;
   district: string;
   state: string;
@@ -90,9 +92,65 @@ export interface RedistributionCandidate {
   drug: string;
   score: number;
   travel_time_min: number;
+  effective_travel_time_min: number;
+  weather_flag: boolean;
   urgency: number;
   donor_shortfall_risk: number;
   donor_surplus_days_of_cover: number;
+}
+
+export interface AvailabilityRow {
+  facility_id: string;
+  facility_name: string;
+  facility_type: string;
+  district: string;
+  state: string;
+  current_days_of_cover: number;
+  current_stock: number;
+  risk_level: string;
+  risk_probability: number;
+  trust_score: number;
+  travel_time_min?: number;
+}
+
+export interface TransferRequestRow {
+  id: number;
+  requesting_facility_id: string;
+  requesting_facility_name?: string;
+  requesting_district?: string;
+  drug: string;
+  suggested_donor_facility_id?: string;
+  note?: string;
+  requested_by: string;
+  status: "pending" | "approved" | "dismissed";
+  resolved_by?: string;
+  resolved_donor_facility_id?: string;
+  created_at: string;
+}
+
+export interface DrugRanking {
+  drug: string;
+  drug_category: string;
+  avg_risk: number;
+  max_risk: number;
+  n_critical: number;
+  n_high: number;
+  n_facilities: number;
+  n_structural_decline: number;
+}
+
+export interface FacilityRanking {
+  facility_id: string;
+  facility_name: string;
+  facility_type: string;
+  district: string;
+  state: string;
+  avg_risk: number;
+  max_risk: number;
+  n_critical: number;
+  n_high: number;
+  n_drugs: number;
+  worst_drug: string;
 }
 
 export interface AuditLogRow {

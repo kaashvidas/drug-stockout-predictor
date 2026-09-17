@@ -53,9 +53,32 @@ class StockReport(Base):
     facility_id = Column(String, nullable=False)
     drug = Column(String, nullable=False)
     reported_stock = Column(Float, nullable=False)
+    status = Column(String, default="normal")  # normal | surplus | critical -- pharmacist's own read on their position
     reported_by = Column(String, nullable=False)
     synced = Column(Boolean, default=True)
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+
+class TransferRequest(Base):
+    """A facility-initiated ask for supply from a nearby surplus facility --
+    distinct from RedistributionApproval, which is a district/state-initiated
+    approval of the model's own top-down recommendation. This is the
+    bottom-up direction: a pharmacist flags critical stock and requests a
+    specific (or best-guess) donor; a procurement role (district/state/
+    national) then approves, redirects, or dismisses it."""
+    __tablename__ = "transfer_requests"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    requesting_facility_id = Column(String, nullable=False)
+    drug = Column(String, nullable=False)
+    suggested_donor_facility_id = Column(String, nullable=True)
+    note = Column(String, nullable=True)
+    requested_by = Column(String, nullable=False)
+    status = Column(String, default="pending")  # pending | approved | dismissed
+    resolved_by = Column(String, nullable=True)
+    resolved_donor_facility_id = Column(String, nullable=True)
+    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+    resolved_at = Column(DateTime, nullable=True)
 
 
 def init_db():

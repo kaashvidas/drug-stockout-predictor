@@ -1,0 +1,250 @@
+[
+  {
+    "district": "Bagalkote",
+    "headquarters": "Bagalkote",
+    "state": "Karnataka",
+    "lat": 16.2903648,
+    "lon": 75.5915819,
+    "display_name": "Bagalkote, Karnataka, India"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "headquarters": "Bengaluru",
+    "state": "Karnataka",
+    "lat": 12.9767936,
+    "lon": 77.590082,
+    "display_name": "Bengaluru, Bangalore North, Bengaluru Urban, Karnataka, India"
+  },
+  {
+    "district": "Bengaluru North",
+    "headquarters": "Doddaballapura",
+    "state": "Karnataka",
+    "lat": 13.2929583,
+    "lon": 77.5431463,
+    "display_name": "Doddaballapura, Doddaballapura taluk, Bengaluru North, Karnataka, 561203, India"
+  },
+  {
+    "district": "Bengaluru South",
+    "headquarters": "Ramanagara",
+    "state": "Karnataka",
+    "lat": 12.720006,
+    "lon": 77.3184199,
+    "display_name": "Bengaluru South, Karnataka, India"
+  },
+  {
+    "district": "Belagavi",
+    "headquarters": "Belagavi",
+    "state": "Karnataka",
+    "lat": 16.1587846,
+    "lon": 74.888862,
+    "display_name": "Belagavi, Karnataka, India"
+  },
+  {
+    "district": "Ballari",
+    "headquarters": "Ballari",
+    "state": "Karnataka",
+    "lat": 15.3483166,
+    "lon": 76.8054883,
+    "display_name": "Ballari, Karnataka, India"
+  },
+  {
+    "district": "Bidar",
+    "headquarters": "Bidar",
+    "state": "Karnataka",
+    "lat": 18.0207297,
+    "lon": 77.2487204,
+    "display_name": "Bidar, Karnataka, India"
+  },
+  {
+    "district": "Vijayapura",
+    "headquarters": "Vijayapura",
+    "state": "Karnataka",
+    "lat": 16.814415,
+    "lon": 75.8933856,
+    "display_name": "Vijayapura, Karnataka, India"
+  },
+  {
+    "district": "Chamarajanagara",
+    "headquarters": "Chamarajanagara",
+    "state": "Karnataka",
+    "lat": 11.9238058,
+    "lon": 76.9393558,
+    "display_name": "Chamarajanagara, Chamarajanagara taluk, Chamarajanagar, Karnataka, 571313, India"
+  },
+  {
+    "district": "Chikkaballapura",
+    "headquarters": "Chikkaballapur",
+    "state": "Karnataka",
+    "lat": 13.0993764,
+    "lon": 77.388729,
+    "display_name": "Nelamangala - Chikkaballapur Highway, Nelamangala, Nelamangala taluk, Bengaluru North, Karnataka, 562123, India"
+  },
+  {
+    "district": "Chikmagalur",
+    "headquarters": "Chikmagalur",
+    "state": "Karnataka",
+    "lat": 13.318014,
+    "lon": 75.7738743,
+    "display_name": "Chikkamagaluru, Chikkamagaluru taluku, Chikkamagaluru, Karnataka, 577101, India"
+  },
+  {
+    "district": "Chitradurga",
+    "headquarters": "Chitradurga",
+    "state": "Karnataka",
+    "lat": 14.3049174,
+    "lon": 76.5296667,
+    "display_name": "Chitradurga, Karnataka, India"
+  },
+  {
+    "district": "Dakshina Kannada",
+    "headquarters": "Mangaluru",
+    "state": "Karnataka",
+    "lat": 12.8698101,
+    "lon": 74.8430082,
+    "display_name": "Mangaluru, Mangaluru taluk, Dakshina Kannada, Karnataka, 575001, India"
+  },
+  {
+    "district": "Davanagere",
+    "headquarters": "Davanagere",
+    "state": "Karnataka",
+    "lat": 14.2558835,
+    "lon": 75.8303421,
+    "display_name": "Davanagere, Karnataka, India"
+  },
+  {
+    "district": "Dharwad",
+    "headquarters": "Dharwad",
+    "state": "Karnataka",
+    "lat": 15.3707296,
+    "lon": 75.1332867,
+    "display_name": "Dharwad, Karnataka, India"
+  },
+  {
+    "district": "Gadag",
+    "headquarters": "Gadag",
+    "state": "Karnataka",
+    "lat": 15.416692,
+    "lon": 75.6815801,
+    "display_name": "Gadag, Karnataka, India"
+  },
+  {
+    "district": "Kalaburagi",
+    "headquarters": "Kalaburagi",
+    "state": "Karnataka",
+    "lat": 17.2408957,
+    "lon": 76.7697439,
+    "display_name": "Kalaburagi, Karnataka, India"
+  },
+  {
+    "district": "Hassan",
+    "headquarters": "Hassan",
+    "state": "Karnataka",
+    "lat": 13.0301852,
+    "lon": 76.1744968,
+    "display_name": "Hassan, Karnataka, India"
+  },
+  {
+    "district": "Haveri",
+    "headquarters": "Haveri",
+    "state": "Karnataka",
+    "lat": 14.7180268,
+    "lon": 75.3656423,
+    "display_name": "Haveri, Karnataka, India"
+  },
+  {
+    "district": "Kodagu",
+    "headquarters": "Madikeri",
+    "state": "Karnataka",
+    "lat": 12.42149,
+    "lon": 75.7387543,
+    "display_name": "Madikeri, Madikeri taluku, Kodagu, Karnataka, 571201, India"
+  },
+  {
+    "district": "Kolar",
+    "headquarters": "Kolar",
+    "state": "Karnataka",
+    "lat": 13.1805066,
+    "lon": 78.2669329,
+    "display_name": "Kolar, Karnataka, India"
+  },
+  {
+    "district": "Koppal",
+    "headquarters": "Koppal",
+    "state": "Karnataka",
+    "lat": 15.5748238,
+    "lon": 76.3118494,
+    "display_name": "Koppal, Karnataka, India"
+  },
+  {
+    "district": "Mandya",
+    "headquarters": "Mandya",
+    "state": "Karnataka",
+    "lat": 12.6368939,
+    "lon": 76.7275477,
+    "display_name": "Mandya, Karnataka, India"
+  },
+  {
+    "district": "Mysuru",
+    "headquarters": "Mysuru",
+    "state": "Karnataka",
+    "lat": 12.3041464,
+    "lon": 76.6529521,
+    "display_name": "Mysuru, Mysuru taluk, Mysuru District, Karnataka, 570001, India"
+  },
+  {
+    "district": "Raichur",
+    "headquarters": "Raichur",
+    "state": "Karnataka",
+    "lat": 16.0547194,
+    "lon": 76.9003647,
+    "display_name": "Raichur, Karnataka, India"
+  },
+  {
+    "district": "Shivamogga",
+    "headquarters": "Shivamogga",
+    "state": "Karnataka",
+    "lat": 13.9326093,
+    "lon": 75.574978,
+    "display_name": "Shivamogga, Shivamogga taluk, Shimoga, Karnataka, 577200, India"
+  },
+  {
+    "district": "Tumakuru",
+    "headquarters": "Tumakuru",
+    "state": "Karnataka",
+    "lat": 13.4192512,
+    "lon": 76.8810004,
+    "display_name": "Tumakuru, Karnataka, India"
+  },
+  {
+    "district": "Udupi",
+    "headquarters": "Udupi",
+    "state": "Karnataka",
+    "lat": 13.5269784,
+    "lon": 74.8731879,
+    "display_name": "Udupi, Karnataka, India"
+  },
+  {
+    "district": "Uttara Kannada",
+    "headquarters": "Karwar",
+    "state": "Karnataka",
+    "lat": 14.812189,
+    "lon": 74.1323413,
+    "display_name": "Karwar, Karwar taluk, Uttara Kannada, Karnataka, 581300, India"
+  },
+  {
+    "district": "Vijayanagara",
+    "headquarters": "Hosapete",
+    "state": "Karnataka",
+    "lat": 15.266493,
+    "lon": 76.3872297,
+    "display_name": "Hosapete, Hosapete taluk, Vijayanagara, Karnataka, 583200, India"
+  },
+  {
+    "district": "Yadgiri",
+    "headquarters": "Yadgiri",
+    "state": "Karnataka",
+    "lat": 16.7633571,
+    "lon": 77.1384994,
+    "display_name": "Yadgiri, Yadagiri taluku, Yadgir, Karnataka, 585200, India"
+  }
+]

@@ -10,11 +10,11 @@ function riskColor(avgRisk: number): string {
 
 export default function RiskHeatmap({ rows }: { rows: HeatmapRow[] }) {
   const center: [number, number] =
-    rows.length > 0 ? [rows.reduce((s, r) => s + r.lat, 0) / rows.length, rows.reduce((s, r) => s + r.lon, 0) / rows.length] : [22.5, 79];
+    rows.length > 0 ? [rows.reduce((s, r) => s + r.lat, 0) / rows.length, rows.reduce((s, r) => s + r.lon, 0) / rows.length] : [15.3, 76.0];
 
   return (
     <div className="bg-white border border-[#D5DEDC] rounded-xl shadow-sm overflow-hidden h-[420px]">
-      <MapContainer center={center} zoom={5} style={{ height: "100%", width: "100%" }} scrollWheelZoom={false}>
+      <MapContainer center={center} zoom={7} style={{ height: "100%", width: "100%" }} scrollWheelZoom={false}>
         <TileLayer
           attribution='&copy; OpenStreetMap contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

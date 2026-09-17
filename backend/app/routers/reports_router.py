@@ -15,14 +15,14 @@ def submit_stock_report(body: StockReportRequest, current_user: User = Depends(g
     stores it directly and logs it to the shared audit trail."""
     report = StockReport(
         facility_id=body.facility_id, drug=body.drug, reported_stock=body.reported_stock,
-        reported_by=current_user.username, synced=True,
+        status=body.status, reported_by=current_user.username, synced=True,
     )
     db.add(report)
     db.commit()
     db.refresh(report)
 
     log_audit(db, current_user.username, current_user.role, "stock_report_submitted",
-              detail=f"{body.facility_id} / {body.drug} = {body.reported_stock}")
+              detail=f"{body.facility_id} / {body.drug} = {body.reported_stock} ({body.status})")
     return {"status": "submitted", "report_id": report.id}
 
 
@@ -32,7 +32,7 @@ def list_reports(facility_id: str, db: Session = Depends(get_session)):
 
     reports = db.query(SR).filter(SR.facility_id == facility_id).order_by(SR.created_at.desc()).limit(50).all()
     return [
-        {"id": r.id, "drug": r.drug, "reported_stock": r.reported_stock, "reported_by": r.reported_by,
-         "created_at": r.created_at.isoformat()}
+        {"id": r.id, "drug": r.drug, "reported_stock": r.reported_stock, "status": r.status,
+         "reported_by": r.reported_by, "created_at": r.created_at.isoformat()}
         for r in reports
     ]

@@ -21,17 +21,17 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="api/auth/login")
 ROLES = ["facility", "district", "state", "program", "national"]
 
 
-def _resolve_pilibhit_facility_id() -> str:
+def _resolve_facility_id(district: str, fallback: str) -> str:
     try:
         from app.data_store import load_facilities
 
         fac = load_facilities()
-        pilibhit = fac[fac["district"] == "Pilibhit"]
-        if not pilibhit.empty:
-            return pilibhit.iloc[0]["facility_id"]
+        match = fac[fac["district"] == district]
+        if not match.empty:
+            return match.iloc[0]["facility_id"]
     except Exception:
         pass
-    return "FAC0121"
+    return fallback
 
 
 class User(BaseModel):
@@ -41,32 +41,34 @@ class User(BaseModel):
     display_name: str
 
 
-# Seeded demo users -- one per role/scope, matching the real districts and
-# the real vertical-program drug basket this project fetched/curated.
+# Seeded demo users -- one per role/scope, matching Karnataka's real
+# districts and the real vertical-program drug basket this project
+# fetched/curated. Ballari, Bengaluru Urban, Dharwad, Kolar and Mysuru are
+# the 5 districts the real CAG audit itself test-checked (Table 4.5).
 SEED_USERS: dict[str, dict] = {
-    "pilibhit_pharmacist": {
+    "ballari_pharmacist": {
         "password_hash": pbkdf2_sha256.hash("demo123"),
         "role": "facility",
-        "scope": _resolve_pilibhit_facility_id(),
-        "display_name": "Pilibhit PHC Pharmacist",
+        "scope": _resolve_facility_id("Ballari", "FAC0001"),
+        "display_name": "Ballari Government Hospital Pharmacist",
     },
-    "sarguja_district_pm": {
+    "mysuru_district_pm": {
         "password_hash": pbkdf2_sha256.hash("demo123"),
         "role": "district",
-        "scope": "Sarguja",
-        "display_name": "Sarguja District Program Manager",
+        "scope": "Mysuru",
+        "display_name": "Mysuru District Program Manager",
     },
-    "tn_state_tnmsc": {
+    "ksmscl_state_officer": {
         "password_hash": pbkdf2_sha256.hash("demo123"),
         "role": "state",
-        "scope": "Tamil Nadu",
-        "display_name": "TNMSC State Procurement Officer",
+        "scope": "Karnataka",
+        "display_name": "KSMSCL State Procurement Officer",
     },
-    "central_tb_division": {
+    "thalassemia_program": {
         "password_hash": pbkdf2_sha256.hash("demo123"),
         "role": "program",
-        "scope": "anti_tb",
-        "display_name": "Central TB Division",
+        "scope": "thalassemia_chelation",
+        "display_name": "Dept. of Health & Family Welfare -- Hemoglobinopathy Programme",
     },
     "national_task_force": {
         "password_hash": pbkdf2_sha256.hash("demo123"),

@@ -5,6 +5,7 @@ const COMMON_DRUGS = [
   "Isoniazid", "Rifampicin", "Ethambutol", "Pyrazinamide", "Amoxicillin", "Ciprofloxacin",
   "Paracetamol", "Ibuprofen", "Oral rehydration salts", "Ringer lactate", "Metformin",
   "Amlodipine", "Oxytocin", "Snake Venom Antiserum", "Insulin (Soluble)",
+  "Deferoxamine", "Deferasirox", "Deferiprone", "Hydroxyurea",
 ];
 
 export default function StockReportForm({ facilityId }: { facilityId: string }) {

@@ -9,7 +9,7 @@ export default function ReconstructedBadge({ text }: { text?: string }) {
       <span className="text-[#A9691C] font-bold">i</span>
       <span>
         {text ??
-          "Reconstructed — interpolated between verified checkpoints (CAG audit percentages; real Sarguja/Pilibhit case-study dates). Not a live feed. See docs/DATA_SOURCES.md."}
+          "Reconstructed — interpolated between verified checkpoints (real CAG Karnataka audit percentages; the real, dated 2020-onward thalassemia chelation-drug shortage). Not a live feed. See docs/DATA_SOURCES.md."}
       </span>
     </div>
   );

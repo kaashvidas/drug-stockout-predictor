@@ -25,8 +25,11 @@ TRAILING_WEEKS = 8
 # smaller/lower-connectivity facilities report less consistently.
 RELIABILITY_BY_FACILITY_TYPE = {
     "District Hospital": 0.97,
+    "General Hospital": 0.95,
+    "Taluk Hospital": 0.92,
     "CHC": 0.90,
     "PHC": 0.82,
+    "Sub-Centre": 0.70,
     "Pharmacy/Dispensary": 0.75,
 }
 
