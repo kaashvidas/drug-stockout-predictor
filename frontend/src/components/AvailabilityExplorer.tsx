@@ -31,14 +31,14 @@ export default function AvailabilityExplorer({ alerts }: { alerts: RiskAlert[] }
   }, [drug, nearFacilityId]);
 
   return (
-    <div className="bg-white border border-[#D5DEDC] rounded-xl shadow-sm p-5">
+    <div className="panel p-5">
       <h3 className="font-semibold text-sm text-[#12292B] mb-1">Availability explorer</h3>
       <p className="text-xs text-[#4C6567] mb-3">
         Look up a drug's availability across every facility in scope, or ranked by real travel time from a chosen facility.
       </p>
       <div className="flex gap-2 mb-3">
         <select
-          className="flex-1 border border-[#D5DEDC] rounded-lg px-3 py-2 text-sm"
+          className="flex-1 border border-[#D5DEDC] rounded-lg px-3 py-2 text-sm outline-none focus:border-[#0F6E66] focus:ring-2 focus:ring-[#0F6E66]/15 transition-shadow"
           value={drug}
           onChange={(e) => setDrug(e.target.value)}
         >
@@ -47,7 +47,7 @@ export default function AvailabilityExplorer({ alerts }: { alerts: RiskAlert[] }
           ))}
         </select>
         <select
-          className="flex-1 border border-[#D5DEDC] rounded-lg px-3 py-2 text-sm"
+          className="flex-1 border border-[#D5DEDC] rounded-lg px-3 py-2 text-sm outline-none focus:border-[#0F6E66] focus:ring-2 focus:ring-[#0F6E66]/15 transition-shadow"
           value={nearFacilityId}
           onChange={(e) => setNearFacilityId(e.target.value)}
         >
@@ -61,7 +61,7 @@ export default function AvailabilityExplorer({ alerts }: { alerts: RiskAlert[] }
       {loading ? (
         <p className="text-sm text-[#4C6567]">Loading...</p>
       ) : (
-        <div className="max-h-80 overflow-y-auto divide-y divide-[#EAF0EE]">
+        <div className="max-h-80 overflow-y-auto thin-scroll divide-y divide-[#EAF0EE]">
           {rows.map((r) => (
             <div key={r.facility_id} className="flex items-center justify-between py-2 text-sm">
               <div>

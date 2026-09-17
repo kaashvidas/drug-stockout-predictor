@@ -38,7 +38,7 @@ export default function MyStockHistory({ facilityId }: { facilityId: string }) {
     .map((r) => ({ ...r, ts: new Date(r.created_at).toLocaleDateString() }));
 
   return (
-    <div className="bg-white border border-[#D5DEDC] rounded-xl shadow-sm p-5">
+    <div className="panel p-5">
       <h3 className="font-semibold text-sm text-[#12292B] mb-1">Your reported stock history</h3>
       <p className="text-xs text-[#4C6567] mb-3">
         Every report you've submitted from this facility, most recent first.
@@ -71,7 +71,7 @@ export default function MyStockHistory({ facilityId }: { facilityId: string }) {
               </LineChart>
             </ResponsiveContainer>
           </div>
-          <div className="max-h-48 overflow-y-auto divide-y divide-[#EAF0EE]">
+          <div className="max-h-48 overflow-y-auto thin-scroll divide-y divide-[#EAF0EE]">
             {reports.map((r) => (
               <div key={r.id} className="flex items-center justify-between py-1.5 text-xs">
                 <span className="text-[#12292B]">{r.drug}</span>

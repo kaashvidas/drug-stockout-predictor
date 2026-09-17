@@ -21,14 +21,14 @@ export default function ExplainabilityPanel({ alert }: { alert: RiskAlert | null
 
   if (!alert) {
     return (
-      <div className="bg-white border border-[#D5DEDC] rounded-xl shadow-sm p-8 text-center text-sm text-[#4C6567]">
+      <div className="panel p-8 text-center text-sm text-[#4C6567]">
         Select an alert to see its decomposition, confidence, and driving signals.
       </div>
     );
   }
 
   if (loading || !data) {
-    return <div className="bg-white border border-[#D5DEDC] rounded-xl shadow-sm p-8 text-center text-sm text-[#4C6567]">Loading...</div>;
+    return <div className="panel p-8 text-center text-sm text-[#4C6567]">Loading...</div>;
   }
 
   const chartData = data.dates.map((d, i) => ({
@@ -40,7 +40,7 @@ export default function ExplainabilityPanel({ alert }: { alert: RiskAlert | null
   })).filter((_, i) => i % 3 === 0); // thin for chart perf
 
   return (
-    <div className="bg-white border border-[#D5DEDC] rounded-xl shadow-sm p-5 space-y-5">
+    <div className="panel p-5 space-y-5">
       <div className="flex items-start justify-between">
         <div>
           <h3 className="font-semibold text-[#12292B]">{data.drug}</h3>
@@ -125,9 +125,9 @@ export default function ExplainabilityPanel({ alert }: { alert: RiskAlert | null
 
 function Stat({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
   return (
-    <div className="bg-[#EAF0EE] rounded-lg py-2">
-      <div className={`text-sm font-bold ${highlight ? "text-[#C1443A]" : "text-[#12292B]"}`}>{value}</div>
-      <div className="text-[10px] uppercase tracking-wide text-[#4C6567]">{label}</div>
+    <div className="bg-[#EAF0EE] rounded-lg py-2.5">
+      <div className={`stat-value text-sm ${highlight ? "text-[#C1443A]" : "text-[#12292B]"}`}>{value}</div>
+      <div className="text-[10px] font-semibold uppercase tracking-wider text-[#4C6567] mt-0.5">{label}</div>
     </div>
   );
 }

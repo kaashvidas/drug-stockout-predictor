@@ -74,6 +74,7 @@ export interface ExplainResponse {
 
 export interface CascadeResponse {
   facility_id: string;
+  drug: string;
   own_stress: number;
   propagated_stress: number;
   neighbor_propagation_paths: {

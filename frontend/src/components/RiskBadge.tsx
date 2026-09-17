@@ -8,7 +8,7 @@ const COLORS: Record<string, string> = {
 export default function RiskBadge({ level }: { level: string }) {
   return (
     <span
-      className={`inline-block text-[10px] font-bold uppercase tracking-wide text-white px-2 py-0.5 rounded-full ${COLORS[level] ?? "bg-gray-400"}`}
+      className={`inline-block font-mono text-[10px] font-semibold uppercase tracking-wider text-white px-2 py-0.5 rounded-full ${COLORS[level] ?? "bg-gray-400"}`}
     >
       {level}
     </span>

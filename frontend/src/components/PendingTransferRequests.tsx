@@ -19,12 +19,12 @@ export default function PendingTransferRequests() {
   }
 
   return (
-    <div className="bg-white border border-[#D5DEDC] rounded-xl shadow-sm p-5">
+    <div className="panel p-5">
       <h3 className="font-semibold text-sm text-[#12292B] mb-1">Facility supply requests</h3>
       <p className="text-xs text-[#4C6567] mb-3">
         Bottom-up requests from facilities reporting critical stock, waiting on your approval.
       </p>
-      <div className="space-y-2 max-h-72 overflow-y-auto">
+      <div className="space-y-2 max-h-72 overflow-y-auto thin-scroll">
         {requests.map((r) => (
           <div key={r.id} className="border border-[#EAF0EE] rounded-lg px-3 py-2">
             <div className="flex items-center justify-between">

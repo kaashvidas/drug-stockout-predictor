@@ -13,7 +13,7 @@ export default function RiskHeatmap({ rows }: { rows: HeatmapRow[] }) {
     rows.length > 0 ? [rows.reduce((s, r) => s + r.lat, 0) / rows.length, rows.reduce((s, r) => s + r.lon, 0) / rows.length] : [15.3, 76.0];
 
   return (
-    <div className="bg-white border border-[#D5DEDC] rounded-xl shadow-sm overflow-hidden h-[420px]">
+    <div className="panel overflow-hidden h-[420px]">
       <MapContainer center={center} zoom={7} style={{ height: "100%", width: "100%" }} scrollWheelZoom={false}>
         <TileLayer
           attribution='&copy; OpenStreetMap contributors'

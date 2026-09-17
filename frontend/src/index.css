@@ -1,19 +1,57 @@
 @import "tailwindcss";
 @import "leaflet/dist/leaflet.css";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
 
 :root {
+  --bg: #F3F6F5;
+  --surface: #FFFFFF;
+  --surface-2: #EAF0EE;
+  --ink: #12292B;
+  --ink-soft: #4C6567;
+  --line: #D5DEDC;
+  --brand: #0F6E66;
+  --brand-ink: #FFFFFF;
+  --gold: #A9691C;
+
   --risk-low: #2E8B57;
   --risk-medium: #B4741B;
   --risk-high: #C1443A;
   --risk-critical: #8E2A2A;
+
+  --shadow-card: 0 1px 2px rgba(18,41,43,.06), 0 4px 14px rgba(18,41,43,.05);
+  --shadow-card-hover: 0 2px 4px rgba(18,41,43,.08), 0 8px 22px rgba(18,41,43,.08);
+
+  --font-display: "IBM Plex Serif", Georgia, serif;
+  --font-body: "IBM Plex Sans", -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
   color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: #F3F6F5;
-  color: #12292B;
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+.font-mono, code {
+  font-family: var(--font-mono);
+}
+
+::selection {
+  background: var(--brand);
+  color: var(--brand-ink);
 }
 
 .risk-low { color: var(--risk-low); }
@@ -26,8 +64,43 @@ body {
 .bg-risk-high { background-color: var(--risk-high); }
 .bg-risk-critical { background-color: var(--risk-critical); }
 
+/* Shared "card" surface used across every panel component */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow-card);
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.panel-interactive:hover {
+  box-shadow: var(--shadow-card-hover);
+  border-color: color-mix(in srgb, var(--brand) 30%, var(--line));
+}
+
+.stat-value {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
 .leaflet-container {
   height: 100%;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 14px;
+}
+
+/* Scrollbar polish for the dense scrolling lists throughout the dashboard */
+.thin-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.thin-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.thin-scroll::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 8px;
+}
+.thin-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--ink-soft);
 }

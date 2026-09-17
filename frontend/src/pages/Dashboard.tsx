@@ -139,9 +139,9 @@ export default function Dashboard() {
 function SummaryStat({ label, value, tone }: { label: string; value: number; tone?: "critical" | "high" }) {
   const color = tone === "critical" ? "text-[#8E2A2A]" : tone === "high" ? "text-[#C1443A]" : "text-[#12292B]";
   return (
-    <div className="bg-white border border-[#D5DEDC] rounded-xl shadow-sm px-5 py-4">
-      <div className={`text-2xl font-semibold ${color}`}>{value}</div>
-      <div className="text-xs uppercase tracking-wide text-[#4C6567] mt-1">{label}</div>
+    <div className="panel px-5 py-4">
+      <div className={`stat-value text-2xl ${color}`}>{value.toLocaleString()}</div>
+      <div className="text-[11px] font-semibold uppercase tracking-wider text-[#4C6567] mt-1.5">{label}</div>
     </div>
   );
 }

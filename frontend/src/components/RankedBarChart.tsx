@@ -33,7 +33,7 @@ export default function RankedBarChart({
   }));
 
   return (
-    <div className="bg-white border border-[#D5DEDC] rounded-xl shadow-sm p-5">
+    <div className="panel p-5">
       <h3 className="font-semibold text-sm text-[#12292B]">{title}</h3>
       {subtitle && <p className="text-xs text-[#4C6567] mb-2">{subtitle}</p>}
       <div style={{ height: Math.max(220, data.length * 28) }}>

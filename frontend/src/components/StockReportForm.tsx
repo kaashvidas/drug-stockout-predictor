@@ -54,14 +54,14 @@ export default function StockReportForm({ facilityId }: { facilityId: string }) 
   }
 
   return (
-    <div className="bg-white border border-[#D5DEDC] rounded-xl shadow-sm p-5">
+    <div className="panel p-5">
       <h3 className="font-semibold text-sm text-[#12292B] mb-1">Report stock</h3>
       <p className="text-xs text-[#4C6567] mb-3">
         Low-connectivity friendly — if you're offline, this queues and syncs automatically once you're back online.
       </p>
       <form onSubmit={submit} className="space-y-2">
         <select
-          className="w-full border border-[#D5DEDC] rounded-lg px-3 py-2 text-sm"
+          className="w-full border border-[#D5DEDC] rounded-lg px-3 py-2 text-sm outline-none focus:border-[#0F6E66] focus:ring-2 focus:ring-[#0F6E66]/15 transition-shadow"
           value={drug}
           onChange={(e) => setDrug(e.target.value)}
         >
@@ -70,7 +70,7 @@ export default function StockReportForm({ facilityId }: { facilityId: string }) 
           ))}
         </select>
         <input
-          className="w-full border border-[#D5DEDC] rounded-lg px-3 py-2 text-sm"
+          className="w-full border border-[#D5DEDC] rounded-lg px-3 py-2 text-sm outline-none focus:border-[#0F6E66] focus:ring-2 focus:ring-[#0F6E66]/15 transition-shadow"
           placeholder="Units in stock"
           type="number"
           value={stock}

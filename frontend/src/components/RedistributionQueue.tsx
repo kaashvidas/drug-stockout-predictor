@@ -49,7 +49,7 @@ export default function RedistributionQueue({ alert }: { alert: RiskAlert | null
   if (!alert) return null;
 
   return (
-    <div className="bg-white border border-[#D5DEDC] rounded-xl shadow-sm p-5">
+    <div className="panel p-5">
       <h3 className="font-semibold text-sm text-[#12292B] mb-1">Redistribution recommendations</h3>
       <p className="text-xs text-[#4C6567] mb-3">
         Ranked by urgency, real travel time (derated for real heavy rain), and donor shortfall risk. Recommend-only — a person approves every transfer.

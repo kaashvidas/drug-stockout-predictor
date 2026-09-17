@@ -13,12 +13,12 @@ export default function AlertList({ alerts, onSelect, selected, maxRows }: Props
   const rows = maxRows ? alerts.slice(0, maxRows) : alerts;
 
   return (
-    <div className="bg-white border border-[#D5DEDC] rounded-xl shadow-sm overflow-hidden">
+    <div className="panel overflow-hidden">
       <div className="px-4 py-3 border-b border-[#D5DEDC] flex items-center justify-between">
         <h3 className="font-semibold text-sm text-[#12292B]">Ranked alerts</h3>
         <span className="text-xs text-[#4C6567]">{alerts.length} facility-drug pairs</span>
       </div>
-      <div className="max-h-[520px] overflow-y-auto divide-y divide-[#EAF0EE]">
+      <div className="max-h-[520px] overflow-y-auto thin-scroll divide-y divide-[#EAF0EE]">
         {rows.map((a) => (
           <button
             key={`${a.facility_id}-${a.drug}`}

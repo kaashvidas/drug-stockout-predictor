@@ -10,12 +10,12 @@ export default function AuditLogPanel() {
   }, []);
 
   return (
-    <div className="bg-white border border-[#D5DEDC] rounded-xl shadow-sm p-5">
+    <div className="panel p-5">
       <h3 className="font-semibold text-sm text-[#12292B] mb-1">Audit trail</h3>
       <p className="text-xs text-[#4C6567] mb-3">
         Every alert-driven action logged once, visible (scoped) at every level above it.
       </p>
-      <div className="space-y-2 max-h-72 overflow-y-auto">
+      <div className="space-y-2 max-h-72 overflow-y-auto thin-scroll">
         {rows.map((r) => (
           <div key={r.id} className="text-xs border-b border-[#EAF0EE] pb-2">
             <div className="text-[#12292B] font-medium">{r.action.replace(/_/g, " ")}</div>
