@@ -38,9 +38,19 @@ filters to facilities that are either OSM-tagged `operator:type=government`
 or name-pattern-matched as government (`"Government Hospital"`, `"PHC"`,
 `"Taluk Hospital"`, `"CHC"`, etc. — India's public facilities reliably
 self-identify by name). This cut Bengaluru Urban to 63 real government
-facilities and kept the statewide total in the ~800-1,200 range instead of
-tens of thousands, while making the dataset actually representative of the
-public essential-drug supply chain this whole platform models.
+facilities and kept the final statewide total at 1,403 real facilities
+across all 31 districts instead of tens of thousands, while making the
+dataset actually representative of the public essential-drug supply chain
+this whole platform models. (672 PHCs, 482 general hospitals, 157
+sub-centres, 74 CHCs, 10 district hospitals, 7 taluk hospitals, 1 pharmacy
+-- see `data/processed/facilities.csv`.) Real road-network travel times
+were computed for all 75,056 same-district facility pairs
+(`data/processed/travel_times.csv`); the two largest districts (Mysuru,
+155 facilities; Yadgiri, 163) exceeded the public OSRM table endpoint's
+per-request coordinate limit and were split into real, OSRM-computed
+sub-clique chunks of ≤80 facilities rather than one full clique -- a
+disclosed simplification, not a fabricated travel time (see
+`scripts/fetch_travel_times.py`).
 
 ## Tier 2 — Real, published ground truth used to calibrate and validate
 
@@ -64,6 +74,16 @@ secondary article):
 - **OPD patient survey** (page 85, n=1,260): only 70% (tertiary), 91%
   (secondary), 92% (primary) of outpatients actually received their
   prescribed drug at the counter.
+- **Table 4.2** (page 82): the real, dated timeline of KSMSCL's own annual
+  procurement cycle (State Therapeutic Committee meeting → indent
+  submission → Need Assessment Committee meeting → government approval →
+  tender → purchase order) for 2016-17 through 2021-22 -- the audit's own
+  finding is that **no fixed calendar schedule existed** for this cycle,
+  so real committee-meeting-to-purchase-order lengths vary from 357 to 575
+  days. This real range is used directly (not invented) as the
+  distribution for how long a procurement disruption realistically lasts
+  once triggered in the generator (`scripts/generate_synthetic_stock.py`),
+  replacing an earlier, made-up 15-45 day placeholder.
 
 All saved with page citations in `data/processed/cag_karnataka_ground_truth.json`.
 

@@ -109,16 +109,29 @@ def drug_category(drug: str) -> str:
     return "other"
 
 
-def weather_multiplier(cat: str, rain_mm: float, temp_max_c: float) -> float:
-    """Real-weather-driven demand multiplier, per the guide's leading-indicator rule table."""
-    mult = 1.0
+def weather_multiplier_array(cat: str, rain_mm: np.ndarray, temp_max_c: np.ndarray) -> np.ndarray:
+    """Vectorized real-weather-driven demand multiplier (same rule table as
+    the guide's leading-indicator fusion), applied across a whole date range
+    at once instead of a per-day Python loop -- this is a performance
+    refactor only, the rule values are unchanged."""
+    mult = np.ones_like(rain_mm, dtype=float)
     if cat == "envenomation":
-        mult *= 1.0 + min(rain_mm / 15.0, 3.0)
+        mult *= 1.0 + np.minimum(rain_mm / 15.0, 3.0)
     if cat == "fluids":
-        mult *= 1.0 + min(rain_mm / 25.0, 1.5) + max(0.0, (temp_max_c - 38) / 10.0)
+        mult *= 1.0 + np.minimum(rain_mm / 25.0, 1.5) + np.maximum(0.0, (temp_max_c - 38) / 10.0)
     if cat == "anti_tb":
-        mult *= 1.0 + min(rain_mm / 60.0, 0.3)
+        mult *= 1.0 + np.minimum(rain_mm / 60.0, 0.3)
     return mult
+
+
+def align_weather_to_dates(weather_df: pd.DataFrame, dates: pd.DatetimeIndex) -> tuple[np.ndarray, np.ndarray]:
+    """Reindex a district's real weather onto the full date range ONCE
+    (called per facility, not per facility-drug pair -- weather doesn't
+    vary by drug)."""
+    w = weather_df.set_index("date").reindex(dates)
+    rain = w["rain_mm"].fillna(0.0).to_numpy()
+    temp = w["temp_max_c"].fillna(30.0).to_numpy()
+    return rain, temp
 
 
 def sample_stockout_rate(district: str, base_dist: np.ndarray) -> float:
@@ -132,11 +145,12 @@ def simulate_facility_drug(
     facility_id: str,
     facility_type: str,
     drug: str,
-    weather_df: pd.DataFrame,
+    dates: pd.DatetimeIndex,
+    rain_arr: np.ndarray,
+    temp_arr: np.ndarray,
     stockout_rate_sample: float,
     procurement_cycle_days: np.ndarray,
 ) -> pd.DataFrame:
-    dates = pd.date_range(START_DATE, END_DATE, freq="D")
     n = len(dates)
     cat = drug_category(drug)
 
@@ -150,17 +164,11 @@ def simulate_facility_drug(
     if drug in CHRONIC_SHORTAGE_DRUGS:
         return _simulate_chronic_shortage(facility_id, drug, cat, dates, base_daily_consumption)
 
-    weather_lookup = weather_df.set_index("date")
-
-    consumption = np.zeros(n)
-    for i, d in enumerate(dates):
-        w = weather_lookup.loc[d] if d in weather_lookup.index else None
-        rain = float(w["rain_mm"]) if w is not None else 0.0
-        temp = float(w["temp_max_c"]) if w is not None else 30.0
-        wmult = weather_multiplier(cat, rain, temp)
-        weekly_wobble = 1.0 + 0.15 * np.sin(2 * np.pi * i / 7)
-        noise = RNG.normal(1.0, 0.08)
-        consumption[i] = max(0.0, base_daily_consumption * wmult * weekly_wobble * noise)
+    wmult = weather_multiplier_array(cat, rain_arr, temp_arr)
+    day_idx = np.arange(n)
+    weekly_wobble = 1.0 + 0.15 * np.sin(2 * np.pi * day_idx / 7)
+    noise = RNG.normal(1.0, 0.08, size=n)
+    consumption = np.maximum(0.0, base_daily_consumption * wmult * weekly_wobble * noise)
 
     stock = np.zeros(n)
     stock[0] = base_daily_consumption * target_days_of_cover
@@ -239,17 +247,27 @@ def main():
           f"mean={stockout_dist.mean():.2%}, range=[{stockout_dist.min():.0%}, {stockout_dist.max():.0%}]")
     print(f"Real KSMSCL procurement cycle length (days): {sorted(procurement_cycle_days.astype(int))}")
 
+    dates = pd.date_range(START_DATE, END_DATE, freq="D")
+    weather_by_district = {
+        district: align_weather_to_dates(grp[["date", "rain_mm", "temp_max_c"]], dates)
+        for district, grp in weather.groupby("district")
+    }
+
     all_frames = []
-    for _, fac in facilities.iterrows():
-        fac_weather = weather[(weather["district"] == fac["district"])][["date", "rain_mm", "temp_max_c"]]
+    n_facilities = len(facilities)
+    for fi, (_, fac) in enumerate(facilities.iterrows()):
+        rain_arr, temp_arr = weather_by_district[fac["district"]]
         for drug in ALL_DRUGS:
             stockout_sample = sample_stockout_rate(fac["district"], stockout_dist)
             df = simulate_facility_drug(
-                fac["facility_id"], fac["facility_type"], drug, fac_weather, stockout_sample, procurement_cycle_days
+                fac["facility_id"], fac["facility_type"], drug, dates, rain_arr, temp_arr,
+                stockout_sample, procurement_cycle_days,
             )
             df["district"] = fac["district"]
             df["state"] = fac["state"]
             all_frames.append(df)
+        if fi % 100 == 0:
+            print(f"  {fi}/{n_facilities} facilities simulated ...", flush=True)
 
     result = pd.concat(all_frames, ignore_index=True)
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)

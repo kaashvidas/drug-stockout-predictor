@@ -7,7 +7,8 @@ rather than replacing them.
 
 Full specification: `docs/build_guide.md`. Data provenance (what's real,
 what's checkpoint-constrained, what's deferred): `docs/DATA_SOURCES.md` and
-`docs/NEXT_STEPS.md`.
+`docs/NEXT_STEPS.md`. **Live build status, what's done vs. in progress, and
+model performance numbers once training completes: `STATUS.md`.**
 
 ## What's real vs. generated
 
