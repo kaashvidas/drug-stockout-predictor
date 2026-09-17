@@ -1,0 +1,9 @@
+{
+  "sarguja_anti_tb": {
+    "monitoring_window_start": "2023-09-20",
+    "real_ctd_admission_date": "2024-03-18",
+    "model_first_persistent_high_risk_date": "2023-10-08",
+    "lead_time_days": 162,
+    "claim": "Within a realistic 180-day monitoring window before the real crisis, the pipeline's risk score first crossed into high/critical risk (and stayed there) on 2023-10-08 -- 162 days before the real, documented 18 March 2024 Central TB Division admission of a nationwide anti-TB drug stockout."
+  }
+}

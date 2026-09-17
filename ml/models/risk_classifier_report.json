@@ -1,0 +1,12 @@
+{
+  "auc": 0.9923970012382124,
+  "feature_importances": {
+    "trend_slope_56d": 0.002239475055394141,
+    "seasonal_amplitude": 0.00022473592079515065,
+    "resid_std": 0.0007421606870727299,
+    "current_days_of_cover": 0.9955413596100466,
+    "avg_consumption_14d": 0.00043752133948200096,
+    "trust_score": 0.0008147473872091562
+  },
+  "report": "              precision    recall  f1-score   support\n\n           0       0.94      0.95      0.95     11187\n           1       0.95      0.94      0.95     11133\n\n    accuracy                           0.95     22320\n   macro avg       0.95      0.95      0.95     22320\nweighted avg       0.95      0.95      0.95     22320\n"
+}

@@ -12,6 +12,7 @@ frontend/.vite/
 data/raw/*.pdf
 data/synthetic/*.parquet
 data/raw/osm_facilities.json
+data/processed/training_features.parquet
 
 # ML model artifacts (rerun ml/train_all.py to reproduce)
 ml/models/*.pkl
