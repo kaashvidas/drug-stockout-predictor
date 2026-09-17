@@ -1,9 +1,11 @@
 {
-  "sarguja_anti_tb": {
-    "monitoring_window_start": "2023-09-20",
-    "real_ctd_admission_date": "2024-03-18",
-    "model_first_persistent_high_risk_date": "2023-10-08",
-    "lead_time_days": 162,
-    "claim": "Within a realistic 180-day monitoring window before the real crisis, the pipeline's risk score first crossed into high/critical risk (and stayed there) on 2023-10-08 -- 162 days before the real, documented 18 March 2024 Central TB Division admission of a nationwide anti-TB drug stockout."
+  "karnataka_thalassemia_chelation": {
+    "real_shortage_start_year": 2020,
+    "real_karnataka_hc_pil_date": "2021-09-23",
+    "real_followup_article_date": "2023-10-02",
+    "n_monitoring_snapshots_statewide": 43493,
+    "pct_snapshots_flagged_high_or_critical": 1.0,
+    "pct_snapshots_flagged_before_article_date": 1.0,
+    "claim": "Across 43493 facility-level monitoring snapshots of Deferoxamine statewide, the pipeline flagged 100% as high/critical risk -- including 100% of snapshots dated on or before the real 2 October 2023 Deccan Herald report confirming the shortage was still unresolved. Unlike a single-admission-date crisis, this drug's correct signature is a PERSISTENT critical flag, not a one-time early warning; the pipeline reproduces that shape rather than a temporary dip."
   }
 }

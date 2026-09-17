@@ -99,7 +99,7 @@ DRUG_TO_CATEGORY = {
     "Snake Venom Antiserum": "envenomation",
     "Insulin (Soluble)": "diabetes",
     "Deferoxamine": "thalassemia_chelation", "Deferasirox": "thalassemia_chelation",
-    "Hydroxyurea": "thalassemia_chelation",
+    "Deferiprone": "thalassemia_chelation", "Hydroxyurea": "thalassemia_chelation",
 }
 
 

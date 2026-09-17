@@ -173,40 +173,47 @@ def simulate_facility_drug(
     stock = np.zeros(n)
     stock[0] = base_daily_consumption * target_days_of_cover
 
-    # Facility-level local stock review is monthly-ish; the BIG bulk restock
-    # a review can trigger is gated by KSMSCL's real, documented, no-fixed-
-    # calendar procurement cycle (357-575 real days, Table 4.2) once a
-    # disruption fires -- not an invented 15-45 day window. During that real
-    # wait, the audit's own finding that "institutions had to locally
-    # procure drugs at higher rates" is modeled as smaller interim trickle
-    # restocks (partial quantity, more frequent) rather than nothing at all.
-    disruption_prob_per_review = min(0.9, stockout_rate_sample * 1.8)
-    review_interval = 30
-    local_purchase_interval = 45
+    # Facility-level local stock review is fortnightly (review_interval=14),
+    # comfortably inside target_days_of_cover so a healthy facility's normal
+    # restock sawtooth never grazes the 14-day critical line on its own --
+    # only a real disruption should push it there. The BIG bulk restock a
+    # review can trigger, once disrupted, is gated by KSMSCL's real,
+    # documented, no-fixed-calendar procurement cycle (357-575 real days,
+    # Table 4.2), not an invented window. disruption_prob_per_review is the
+    # real CAG stockout-rate sample directly (no artificial amplification).
+    # During the real wait, the audit's own finding that "institutions had
+    # to locally procure drugs at higher rates" is modeled as smaller,
+    # frequent interim trickle restocks -- checked every day, independent of
+    # the fortnightly review, so it isn't accidentally starved by interval
+    # alignment.
+    disruption_prob_per_review = min(0.75, stockout_rate_sample)
+    review_interval = 14
+    local_purchase_interval = 20
     supply_shortfall_active_until = -1
     in_disruption = False
 
     for i in range(1, n):
         stock[i] = stock[i - 1] - consumption[i]
+        avg_c = consumption[max(0, i - 14): i].mean()
 
         if i % review_interval == 0:
-            avg_c = consumption[max(0, i - 14): i].mean()
             days_cover = stock[i] / avg_c if avg_c > 0 else 999
             needs_reorder = days_cover < target_days_of_cover * 0.6
-            if needs_reorder:
-                if not in_disruption:
-                    disrupted = RNG.uniform(0, 1) < disruption_prob_per_review
-                    if disrupted:
-                        cycle_days = int(RNG.choice(procurement_cycle_days))
-                        supply_shortfall_active_until = i + cycle_days
-                        in_disruption = True
-                if i >= supply_shortfall_active_until:
-                    qty = avg_c * target_days_of_cover
-                    stock[i] += qty
-                    in_disruption = False
-                elif in_disruption and i % local_purchase_interval == 0:
-                    # partial, higher-cost local procurement (real audit finding)
-                    stock[i] += avg_c * target_days_of_cover * 0.3
+            if needs_reorder and not in_disruption:
+                disrupted = RNG.uniform(0, 1) < disruption_prob_per_review
+                if disrupted:
+                    cycle_days = int(RNG.choice(procurement_cycle_days))
+                    supply_shortfall_active_until = i + cycle_days
+                    in_disruption = True
+            if needs_reorder and not in_disruption:
+                stock[i] += avg_c * target_days_of_cover
+
+        if in_disruption and i >= supply_shortfall_active_until:
+            stock[i] += avg_c * target_days_of_cover
+            in_disruption = False
+        elif in_disruption and i % local_purchase_interval == 0:
+            # partial, higher-cost local procurement (real audit finding)
+            stock[i] += avg_c * target_days_of_cover * 0.4
 
         stock[i] = max(0.0, stock[i])
 
