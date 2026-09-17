@@ -1,9 +1,29 @@
 # Project status — Shortage Cascade (Karnataka)
 
-**Last updated:** 2026-09-17, ~17:50 IST. This file is a live tracker, not a
+**Last updated:** 2026-09-17, ~19:15 IST. This file is a live tracker, not a
 one-time report — it gets updated as the build progresses. For setup
 instructions see `README.md`; for full data provenance see
 `docs/DATA_SOURCES.md`; for known gaps see `docs/NEXT_STEPS.md`.
+
+## Post-launch fixes (found via user report, not internal testing)
+
+- **Cascade panel always showed ~100%.** Root cause: `own_stress` per
+  facility was the MAX risk across its entire 24-drug basket, and every
+  facility carries at least one permanently-critical drug (the real chronic
+  thalassemia shortage), so it floored out near 1.0 regardless of which
+  alert was selected. Compounded by the diffusion graph connecting every
+  facility within a whole administrative district (some have 150+
+  facilities) and double-counting neighbor contributions via both in- and
+  out-edges. Fixed: cascade is now scoped to the specific selected drug,
+  edges are restricted to a real 30-minute catchment radius, and neighbor
+  weights are normalized so the diffusion term is a bounded weighted
+  average. Verified: a genuinely low-risk pair now shows 0.2% own stress →
+  29% after propagation, a real varying number, not a ceiling.
+- **Visual redesign**: added an IBM Plex Serif/Sans/Mono type system,
+  unified all 13 duplicated card-styling class strings into one `.panel`
+  utility, applied mono styling to every numeric/data display, added
+  focus states to every form input, and light interaction polish (hover
+  states, sticky header, thin scrollbars).
 
 ## What this project is
 
